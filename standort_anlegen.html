@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Standort Anlegen Page</title>
+    
+    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
+    
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no;">
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/jquery.datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+</head>
+<body>
+    <div class="main_wrapper">
+        <!-- Header Start -->
+        <div class="header_wrapper">
+            <header>
+                <div class="header_block">
+                    <div class="logo_trigger_hold">
+                        <div class="logo">
+                            <a href="#0"><span>TES</span>TOOLA</a>
+                        </div>
+                        <div class="menu_trigger">
+                            <a href="#0"><img src="assets/images/toggle_ic.svg" alt="trigger"></a>
+                        </div>
+                    </div>
+                    <div class="header_left_content">
+                        <div class="header_common_btn">
+                            <a href="#0" class="common_btn" data-bs-toggle="modal" data-bs-target="#termin_buchen">Termin buchen</a>
+                        </div>
+                        <div class="logout_icon">
+                            <a href="#0"><img src="assets/images/logout_ic.svg" alt="logout"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Header End -->
+        
+        <!-- Sidebar Start -->
+        <div class="sidebar_wrapper">
+            <div class="sidebar_block">
+                <div class="sidebar_menu_block">
+                    <div class="mobile_menu_header">
+                        <div class="logo">
+                            <div class="logo">
+                                <a href="index.html"><span>TES</span>TOOLA</a>
+                            </div>
+                        </div>
+                        <div class="close_trigger">
+                            <a href="#0"><img src="assets/images/close_menu_ic.svg" alt="trigger"></a>
+                        </div>
+                    </div>
+                    <div class="sidebar_menu">
+                        <ul>
+                            <li >
+                                <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu1.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Dashboard</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="termine.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Termine">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu2.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Termine</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Labor.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Labor">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu3.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Labor</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_menu_title">
+                        <h3>EINSTELLUNGEN</h3>
+                    </div>
+                    <div class="sidebar_menu_sec">
+                        <ul>
+                            <li >
+                                <a href="mein_unternehmen.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Mein Unternehmen">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu4.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Mein Unternehmen</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mitarbeiter.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Mitarbeiter">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu7.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Mitarbeiter</div>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="standortverwaltung.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Standortverwaltung">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu6.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Standortverwaltung</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cm-overlay"></div>
+        <!-- Sidebar End -->
+        
+        <!-- Main Content Start -->
+        <div class="main_content">
+            <div class="main_content_lg">
+                <div class="db_common_heading_box">
+                    <h2 class="wow fadeInUp">Standortverwaltung</h2>
+                </div>
+                
+                <div class="common_content_pad_block standort_anlegen_wrap">
+                    <div class="common_white_box">
+                        <div class="common_white_box_title">
+                            <h3><a class="back_btn_page" href="standortverwaltung.html"><img src="assets/images/back_ic.svg" alt="icon"></a><span>Neuen Standort anlegen</span> </h3>
+                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#mitarbeiter_bestätigung_weiter" class="common_btn">Einstellungen speichern</a>
+                        </div>
+
+                        <div class="neuen_standort_anlegen_wrap">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="common_geray_box  wow fadeInUp" data-wow-duration="2.5s">
+                                       <div class="standortname_content_row row">
+                                           <div class="sta_col_left">
+                                               <div class="common_sta_hold">
+                                                   <p>Standortname:</p>
+                                                   <div class="common_input">
+                                                        <input type="text" >
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="sta_col_right">
+                                            <div class="common_sta_hold">
+                                                <p>Adresse des Standorts:</p>
+                                                <div class="common_input">
+                                                     <input type="text" >
+                                                 </div>
+                                            </div>
+                                           </div>
+                                       </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="standortspezifische_wrap">
+                                <div class="stan_common_title">
+                                    <h3>Standortspezifische Check-In Einstellungen</h3>
+                                </div>
+
+                                <div class="common_geray_box  wow fadeInUp" data-wow-duration="2.5s">
+                                    <div class="stan_cm_row">
+                                        <div class="cm_4">
+                                            <div class="stand_check_in_hold">
+                                                <div class="st_check_info">
+                                                    <h4>Check-In Intervall</h4>
+                                                    <p>(In Minuten)</p>
+                                                </div>
+                                                <div class="common_input">
+                                                    <input type="text" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cm_4">
+                                            <div class="stand_check_in_hold">
+                                                <div class="st_check_info">
+                                                    <h4>Anzahl Personen</h4>
+                                                    <p>(pro im CheckIn-Interval)</p>
+                                                </div>
+                                                <div class="common_input">
+                                                    <input type="text" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cm_4">
+                                            <div class="stand_check_in_hold">
+                                                <div class="st_check_info">
+                                                    <h4>Tage im Voraus buchbar</h4>
+                                                    <p>(maximale Anzahl an Tagen festlegen)</p>
+                                                </div>
+                                                <div class="common_input">
+                                                    <input type="text" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schichten_table_wrap">
+                                <div class="stan_common_title">
+                                    <h3>Schichten (Öffnungszeiten) anlegen & verwalten</h3>
+                                    <a href="#0" data-bs-toggle="modal" data-bs-target="#schicht_anlegen_modal" class="common_btn">Neue Schicht anlegen</a>
+                                </div>
+
+                                <div class="schichten_table_block">
+                                    <div class="table-responsive">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="table_group">
+                                                            <div class="round">
+                                                                <input type="checkbox" id="checkbox1">
+                                                                <label for="checkbox1" class="radio-label"></label>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th><p>Name der Schicht</p></th>
+                                                    <th><p>Adresse</p></th>
+                                                    <th><p>Bearbeiten</p></th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                      </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content End -->
+        
+        <!-- Modal -->
+         <!-- Termin buchen Modal -->
+         <div class="modal fade common_modal" id="termin_buchen" tabindex="-1"  aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Manuellen Termin buchen</h3>
+                            <p>Buchen Sie hier einen manuellen Termin und geben die Daten ein.</p>
+                        </div>
+                        
+                        <div class="tb_content_block">
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Vorname">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_full">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Straße + Hausnummer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Postleitzahl">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ort">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="email" placeholder="E-Mail">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Telefon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input date_picker">
+                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
+                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ausweisnummer">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           
+                            <div class="modal_common_btn hea_modal_btn">
+                                <button class="common_btn" data-bs-toggle="modal" data-bs-target="#termin_buchen_estatigung">Einchecken</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!-- Termin buchen Bestätigung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="termin_buchen_estatigung" tabindex="-1"  aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Person wurde eingecheckt!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest durchgeführt werden.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Mitarbeiter Bestätigung Weiter Modal-->
+         <div class="modal fade common_modal cm_small_common" id="mitarbeiter_bestätigung_weiter" tabindex="-1"  aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Ihre Daten wurden gespeichert!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Ihre Daten haben wir gespeichert <br> und im System aktualisiert.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Schicht Anlegen Modal -->
+         <div class="modal fade common_modal" id="schicht_anlegen_modal" tabindex="-1"  aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Schicht anlegen</h3>
+                            <p>Hier kannst du verschiedene Schichten (Öffnungszeiten) anlegen</p>
+                        </div>
+
+                        <div class="schicht_anlegen_m_content">
+                            <div class="sam_gary_box">
+                                <div class="sam_serch_hlod">
+                                    <p>Schichtname</p>
+                                    <div class="common_input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sam_gary_box">
+                                <div class="fur_welchen_m_content">
+                                    <h4>Für welchen Wochentag möchtest du eine Schicht festlegen?</h4>
+                                    <div class="all_checkboxes">
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" id="Montag">
+                                            <label for="Montag">Montag</label>
+                                        </div>
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" checked="" id="Dienstag">
+                                            <label for="Dienstag">Dienstag</label>
+                                        </div>
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" id="Mittwoch">
+                                            <label for="Mittwoch">Mittwoch</label>
+                                        </div>
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" id="Donnerstag">
+                                            <label for="Donnerstag">Donnerstag</label>
+                                        </div>
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" id="Freitag">
+                                            <label for="Freitag">Freitag</label>
+                                        </div>
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" id="Samstag">
+                                            <label for="Samstag">Samstag</label>
+                                        </div>
+                                        <div class="cm_checkbox">
+                                            <input type="checkbox" id="Sonntag">
+                                            <label for="Sonntag">Sonntag</label>                                               
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sam_gary_box">
+                                <div class="schichtbeginn_m_content">
+                                    <div class="sam_m_common_row">
+                                        <p>Schichtbeginn</p>
+                                        <div class="common_input time_picker">
+                                            <input type="text" class="startTime" placeholder="HH:MM">
+                                            <span class="date_icon"><img src="assets/images/time_ic.svg" alt="time"></span>
+                                        </div>
+                                    </div>
+                                    <div class="sam_m_common_row">
+                                        <p>Schichtende</p>
+                                        <div class="common_input time_picker">
+                                            <input type="text" class="startTime" placeholder="HH:MM">
+                                            <span class="date_icon"><img src="assets/images/time_ic.svg" alt="time"></span>
+                                        </div>
+                                    </div>
+                                    <div class="sam_m_common_row">
+                                        <p>Gültig ab</p>
+                                        <div class="common_input date_picker">
+                                            <input type="text" class="startDate" placeholder="DD.MM.YYYY">
+                                            <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                        </div>
+                                    </div>
+                                    <div class="sam_m_common_row">
+                                        <p>Gültig bis</p>
+                                        <div class="common_input date_picker">
+                                            <input type="text" class="startDate" placeholder="DD.MM.YYYY">
+                                            <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="common_box_btn">
+                                <a href="javascript:void(0)" data-bs-dismiss="modal" class="common_btn">Einstellungen speichern</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+                       
+    </div>
+    
+            
+        <script src="assets/js/jquery3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script> 
+        <script src="assets/js/jquery.datetimepicker.full.min.js" ></script> 
+        <script src= "assets/js/wow.js"> </script>
+        <script src="assets/js/custom.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $(function () {
+                   
+                });
+                jQuery.datetimepicker.setLocale('de');
+
+                jQuery('.startDate').datetimepicker({
+                    i18n:{
+                        de:{
+                            months:[
+                                'Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember',
+                            ]
+                        }
+                    },
+                    dayOfWeekStart: 1,
+                    timepicker:false,
+                    format:'d.m.Y'
+                });            
+
+
+                jQuery('.startTime').datetimepicker({
+                    datepicker:false,
+                    format:'h:m a',
+                    step : 1
+
+                });
+            });
+            
+            //File Upload Js
+            $('input[type="file"]').change(function(e){
+                    var fileName = e.target.files[0].name;
+                    $(this).parents('.file-upload').find('.file-select-name').text(fileName);
+            });
+        </script>
+    </body>
+    </html>

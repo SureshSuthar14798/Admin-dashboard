@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Page</title>
+    
+    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
+    
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Date Time Picker CSS -->
+    <link href="assets/css/jquery.datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/suresh_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/suresh_r.css">
+    
+</head>
+
+<body class="step_form">
+    <div class="main_wrapper">
+        
+        <!-- Main Content Start -->
+        <div class="main_content">
+            <div class="cm_step_page">
+                <div class="cm_page_logo">
+                    <div class="logo">
+                        <a href="index.html"><span>TES</span>TOOLA</a>
+                    </div>
+                </div>
+                <div class="cm_step_block">
+                    <div class="cm_top_title">
+                        <h4>Buchung eines Schnelltests</h4>
+                    </div>
+                    
+                    <div class="cm_step_title">
+                        <p>Testcenter Wusterhausen, Musterstraße 1, 12345 Musterstadt</p>
+                    </div>
+                    <div class="cm_step_formbox">
+                        <div class="cm_steps">
+                            <div class="step_block active">
+                                <div class="step_block_inner">
+                                    <div class="step_number">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="step_name">
+                                        <p>Termin auswählen</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step_block">
+                                <div class="step_block_inner">
+                                    <div class="step_number">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="step_name">
+                                        <p>Persönliche Informationen</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step_block">
+                                <div class="step_block_inner">
+                                    <div class="step_number">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="step_name">
+                                        <p>Termin buchen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wizard">
+                            <div class="form_inner">
+                                <div class="form-container active">
+                                    <div class="form_block">
+                                        <div class="select_date_block">
+                                            <h2 class="form_title">Termin auswählen</h2>
+                                            <div class="common_input date_picker date_block">
+                                                <input type="text" class="startDate" placeholder="DD.MM.YYYY">
+                                                <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                            </div>
+                                        </div>
+                                        <div class="select_period_block">
+                                            <h2 class="form_title">Zeitraum auswählen</h2>
+                                            <div class="select_period_inner">
+                                                <ul class="cm_select_btn">
+                                                    <li> <p> ab 09:00 </p></li>
+                                                    <li> <p> ab 14:00 </p></li>
+                                                    <li> <p> ab 10:00 </p></li>
+                                                    <li> <p> ab 15:00 </p></li>
+                                                    <li> <p> ab 11:00 </p></li>
+                                                    <li> <p> ab 16:00 </p></li>
+                                                    <li> <p> ab 12:00 </p></li>
+                                                    <li> <p> ab 17:00 </p></li>
+                                                    <li> <p> ab 13:00 </p></li>
+                                                    <li> <p> ab 18:00 </p></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="select_time_block">
+                                            <h2 class="form_title">Uhrzeit auswählen</h2>
+                                            <div class="time_block_inner">
+                                                <ul class="cm_select_btn">
+                                                    <li> <p> 10:00 </p> </li>
+                                                    <li> <p> 10:15 </p> </li>
+                                                    <li> <p> 10:30 </p> </li>
+                                                    <li> <p> 10:45 </p> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="step_btns">
+                                            <div class="step_btns_inner">
+                                                <a href="#0"> </a>
+                                                <a href="#0" class="common_btn next"> Weiter </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form-container">
+                                    <div class="all_inputbox_outer">
+                                        <h2 class="form_title">Persönliche Informationen</h2>
+                                        <div class="all_input_box">
+                                            <div class="form_input_box">
+                                                <label for="Vorname">Vorname: <span>*</span></label>
+                                                <input type="text" id="Vorname" placeholder="Sandro">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Nachname">Nachname: <span>*</span></label>
+                                                <input type="text" id="Nachname" placeholder="Mühlbauer">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Straße">Straße: <span>*</span></label>
+                                                <input type="text" id="Straße" placeholder="Am Kammerholz">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Hausnummer">Hausnummer: <span>*</span></label>
+                                                <input type="number" id="Hausnummer" placeholder="3">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Postleitzahl">Postleitzahl: <span>*</span></label>
+                                                <input type="text" id="Postleitzahl" placeholder="97525">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Ort">Ort: <span>*</span></label>
+                                                <input type="text" id="Ort" placeholder="Schwebheim">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="E-Mail">E-Mail: <span>*</span></label>
+                                                <input type="email" id="E-Mail" placeholder="mustermangfz@gmail.com">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Telefon">Telefon: <span>*</span></label>
+                                                <input type="tel" id="Telefon" required placeholder="0170 / 1010158">
+                                            </div>
+                                            <div class="form_input_box">
+                                                <label for="Geburtsdatum">Geburtsdatum: <span>*</span></label>
+                                                <div class="common_input date_picker date_block">
+                                                    <input type="text" class="startDate" id="Geburtsdatum" placeholder="15.10.1989">
+                                                    <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form_input_box text_uppercase">
+                                                <label for="Ausweisnummer">Ausweisnummer: <span>*</span></label>
+                                                <input type="text" id="Ausweisnummer" class="text-uppercase" placeholder="LXGHJ5HX">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="step_btns"> 
+                                            <div class="step_btns_inner">
+                                                <a href="#0" class="common_btn back"> Zurück </a>
+                                                <a href="#0" class="common_btn next"> Weiter </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form-container">
+                                    <div class="form_address_block">
+                                        <h2 class="form_title">Übersicht der Buchungsdaten</h2>
+                                        <div class="form_address_boxes">
+                                            <div class="address_box">
+                                                <div class="address_box_inner">
+                                                    <span>Persönliche Daten</span>
+                                                    <div class="address_white_box_container address">
+                                                        <div class="address_white_box">
+                                                            <p>Sandro Mühlbauer
+                                                                Am Kammerholz 3
+                                                                97525 Schwebheim
+                                                                15.10.1989</p>
+                                                        </div>
+                                                        <div class="address_white_box">
+                                                            <p>muehkbauergfz@gmail.com
+                                                            0170 / 1010158
+                                                            HGJ5WJGHW</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="address_box">
+                                                <div class="address_box_inner">
+                                                    <span>Termindaten</span>
+                                                    <div class="address_white_box_container">
+                                                        <div class="address_white_box tel">
+                                                            <span>26.10.2021</span>
+                                                        </div>
+                                                        <div class="address_white_box tel">
+                                                            <span>14:15 Uhr</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="step_btns btn_wrap">
+                                            <div class="step_btns_inner">
+                                                <a href="#0" class="common_btn back"> Zurück </a>
+                                                <a href="#0" class="common_btn submit" data-bs-toggle="modal" data-bs-target="#step_form_popup"> Termin verbindliche buchen </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="cm_bottom_info">
+                    <h5>Impressum | Datenschutz </h5>
+                    <p>Diese Applikation wird durch die DeineStadt.Digital GmbH bereitgestellt!</p>
+                </div>
+            </div>
+
+            <!-- step_form_popup Modal-->
+            <div class="modal fade common_modal cm_small_common" id="step_form_popup" tabindex="-1"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content terimin_content">
+                        <div class="modal-body">
+                            <div class="common_success_content">
+                                <div class="cm_success_ic">
+                                    <img src="assets/images/modal_check_ic.svg" alt="check">
+                                </div>
+                                <div class="cm_success_title">
+                                    <h3>Ihre Daten wurden gespeichert!</h3>
+                                </div>
+                                <div class="cm_success_desc">
+                                    <p>Ihre Daten haben wir gespeichert <br> und im System aktualisiert.</p>
+                                </div>
+                                <div class="cm_success_btn">
+                                    <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- step_form_popup Modal-->
+
+        </div>
+        <!-- Main Content End -->
+    </div>
+    
+    <script src="assets/js/jquery3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.datetimepicker.full.min.js"> </script>
+    <script src="assets/js/wow.js"> </script>
+    <script src="assets/js/custom.js"> </script>
+    <script>
+        // Date Time Picker Js
+        $(document).ready(function () {
+            jQuery.datetimepicker.setLocale('de');
+
+            jQuery('.startDate').datetimepicker({
+                i18n: {
+                    de: {
+                        months: [
+                            'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember',
+                        ]
+                    }
+                },
+                dayOfWeekStart: 1,
+                timepicker: false,
+                format: 'd.m.Y'
+            });
+
+
+            jQuery('.startTime').datetimepicker({
+                datepicker: false,
+                format: 'h:m a',
+                step: 1
+
+            });
+        });
+        
+
+        // Toggle Blue Btn Js
+        $('.cm_select_btn li p').click(function(){
+            $(this).parent().siblings().find('p').removeClass('active');
+            $(this).addClass('active');
+        })
+
+        // Step Form Js
+            $(".submit").on("click", function () {
+                return false;
+            });
+            var index = 0;
+            $(".next").on("click", function () {
+                index = (index + 1);
+                $(this).parents(".form-container").removeClass("active").next().addClass("active");
+                $(".step_block").removeClass("active complete");
+                $(".step_block").eq(index).addClass("active").prevAll().addClass('complete');
+            });
+            $(".back").on("click", function () {
+                index = (index - 1);
+                $(this).parents(".form-container").removeClass("active").prev().addClass("active");
+                $(".step_block").removeClass("active complete");
+                $(".step_block").eq(index).addClass("active").prevAll().addClass('complete').nextAll().removeClass('complete');
+            });
+
+
+    </script>
+    
+</body>
+
+</html>
