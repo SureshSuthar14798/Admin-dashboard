@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+  <g id="_12" data-name="12" transform="translate(0 0)">
+    <path id="Stroke_1" data-name="Stroke 1" d="M0,.5H6" transform="translate(15.5 10)" fill="none" stroke="#39475b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Stroke_2" data-name="Stroke 2" d="M0,.5H6" transform="translate(15.5 13)" fill="none" stroke="#39475b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Stroke_3" data-name="Stroke 3" d="M0,.5H19" transform="translate(2.5 16)" fill="none" stroke="#39475b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Stroke_4" data-name="Stroke 4" d="M0,.5H17" transform="translate(2.5 19)" fill="none" stroke="#39475b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <g id="Group_9" data-name="Group 9">
+      <path id="Stroke_5" data-name="Stroke 5" d="M4.83,0H0V15H18.406A4.594,4.594,0,0,0,23,10.406V0H15.18" transform="translate(0.5 7.5)" fill="none" stroke="#39475b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_7" data-name="Stroke 7" d="M3.52,11.827,0,13,1.174,9.48l4.5-4.5,4.5-4.5a1.659,1.659,0,0,1,2.347,2.346l-4.5,4.5Z" transform="translate(4.499 0.5)" fill="none" stroke="#39475b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.112" height="16.659" viewBox="0 0 26.112 16.659">
+  <g id="Group_12" data-name="Group 12" transform="translate(-274.098 -17.171)">
+    <g id="eye_icon" data-name="eye icon" transform="translate(274 18)">
+      <path id="Stroke_1" data-name="Stroke 1" d="M12.556,0A15.763,15.763,0,0,0,0,6.417a15.763,15.763,0,0,0,12.556,6.417A15.763,15.763,0,0,0,25.112,6.417,15.763,15.763,0,0,0,12.556,0Z" transform="translate(0.598 0.583)" fill="none" stroke="#aeb9ca" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M8.371,4.083A4.135,4.135,0,0,1,4.185,8.167,4.135,4.135,0,0,1,0,4.083,4.135,4.135,0,0,1,4.185,0,4.135,4.135,0,0,1,8.371,4.083Z" transform="translate(8.969 2.917)" fill="none" stroke="#aeb9ca" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Stroke_5" data-name="Stroke 5" d="M0,1.75A1.774,1.774,0,0,1,1.794,0" transform="translate(11.36 5.25)" fill="none" stroke="#aeb9ca" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y1="16" x2="14" transform="translate(280.5 17.5)" fill="none" stroke="#aeb9ca" stroke-width="1"/>
+  </g>
+</svg>

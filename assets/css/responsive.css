@@ -1,0 +1,1067 @@
+
+@media (min-width: 1200px){
+    
+}
+
+
+
+@media (max-width: 1800px){}
+@media (max-width: 1600px){}
+@media (max-width: 1440px){
+    .db_display_box{
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 1360px){
+    .cm_step_page {
+        padding-top: 50px;
+    }
+    .cm_page_logo {
+        padding-bottom: 30px;
+    }
+    .cm_bottom_info {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .terminvergabe_title {
+        padding: 20px;
+    }
+    .administrator_table .mitarbeiter_die_table table tr td:nth-child(6) {
+        min-width: 110px !important;
+    }
+    .administrator_table .mitarbeiter_die_table table tr td:nth-child(5) {
+        width: 19% !important;
+    }
+    .administrator_table .mitarbeiter_die_table table tr td:nth-child(3) {
+        width: 18% !important;
+    }
+    .administrator_table .mitarbeiter_die_table table tr td:nth-child(2) {
+        width: 18% !important;
+    }
+    
+    #Unternehmen_modal.common_modal .modal-dialog {
+        max-width: 98%;
+    }
+}
+
+@media (max-width: 1280px){
+    .va_select_box .common_select{
+        min-width: auto;
+        width: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media (max-width: 1199px){
+    .edit-mrgin{
+        margin-right: 15px;
+    }
+    .cm_col_20, .cm_col_40{
+        width: 33.333%;
+    }
+    .ck_editor_block{
+        margin:25px 0 0;
+    }
+       /*============== Error Page Start ===============*/
+       .error_img img {
+        max-width: 450px;
+        width: 100%;
+    }
+    .error_info h3{
+        font-size: 26px;
+        margin: 40px 0 20px;
+    }
+    /*============== Error Page End ===============*/
+    .komplette_table_block table.dataTable.common_table_inner{
+        padding-top: 140px;
+    }
+    .komplette_table_block .common_table_inner::after{
+        padding-bottom: 70px;
+    }
+    .komplette_table_block .dataTables_wrapper .dataTables_filter {
+        top: 55px;
+        max-width: 100%;
+        right: 0;
+        left: 0;
+        padding: 0 20px;
+    }
+    .form_input_box {
+        width: 23.1%;
+    }
+    .all_input_box {
+        margin-left: -8px;
+    }
+    .cm_step_block {
+        max-width: 950px;
+    }
+    .step_name p{
+        font-size: 14px;
+    }
+    .form_block {
+        padding: 15px;
+        padding-top: 0;
+    }
+    .form_address_block,
+    .all_inputbox_outer {
+        padding: 0 15px;
+        padding-bottom: 20px;
+    }
+    .cm_checkbox {
+        width: 32.9%;
+    }
+    .buchung_input_box .common_input input {
+        width: 214px;
+    }
+    .buchung_date_left_inner {
+        max-width: 214px;
+        margin-left: 30px;
+    }
+    .buchung_date_block {
+        width: 370px;
+    }
+    .buchung_date_left {
+        width: calc(100% - 370px);
+        margin-top: 32px;
+    }
+    
+    .Unternehmen_table_left {
+        width: 517px;
+        padding-right: 40px;
+    }
+    .Unternehmen_table_right {
+        width: calc(100% - 517px);
+    }
+    .password_input .mu_label_col {
+        width: 160px;
+    }
+    .password_input .mu_input_col {
+        width: calc(100% - 160px);
+    }
+    .tb_heading_modal {
+        padding-bottom: 25px;
+    }
+    .Unternehmen_table:after {
+        top: 72px;
+    }
+    .bitte_lade_hie_box{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 991px){
+    .sidebar_wrapper {
+        top: 0;
+        height: 100%;
+        left: -260px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.5s ease 0s;
+        -moz-transition: all 0.5s ease 0s;
+        -ms-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    .main_content_lg, .sidebar_reduced .main_content_lg {
+        padding-left: 0px;
+    }
+    .sidebar_reduced .sidebar_wrapper{
+        width: 240px;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .sidebar_reduced .menu_text, .menu_text {
+        opacity: 1;
+        right: unset;
+    }
+    .sidebar_reduced .sub_menu_title, .sub_menu_title  {
+        display: block;
+        transition: unset;
+    }
+    .sidebar_reduced  .cm-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+    .mobile_menu_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 15px 20px ;
+    }
+    .sub_menu_title:before{
+        display: none;
+    }
+    .sidebar_reduced .sub_menu_title h3{
+        opacity: 1;
+        visibility: inherit;
+    }
+    .tooltip.show {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .cm_overflow, .cm_overflow body{
+        overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+        -webkit-touch-action: none;
+        height: 100%;
+
+    }
+    .agb_wrap .row>*{
+        margin-bottom: 15px;
+    }
+    .agb_wrap .row>*:last-child, .vertrag_auswahlen_wrapper .row>*:last-child{
+        margin-bottom: 0;
+    }
+    .vertrag_auswahlen_wrapper .row>*{
+        margin-bottom: 25px;
+    }
+    /*============== Error Page Start ===============*/
+    .error_info h3{
+        font-size: 24px;
+        margin: 35px 0 20px;
+    }
+    .error_info p{
+        font-size: 20px;
+    }
+    /*============== Error Page End ===============*/
+
+    .dataTables_wrapper .dataTables_length, 
+    .dataTables_wrapper .dataTables_info, 
+    .dataTables_wrapper .dataTables_paginate{
+        padding-bottom: 10px;
+    }
+    .logo a{
+        margin-right: 25px;
+    }
+    .cm_page_logo .logo a {
+        font-size: 38px;
+    }
+    .cm_step_title,
+    .cm_top_title {
+        padding: 15px;
+    }
+    .step_number p {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .cm_steps {
+        padding: 15px;
+    }
+    .cm_step_formbox {
+        margin: 0 15px;
+    }
+    .cm_step_title p {
+        font-size: 12px;
+    }
+    .cm_top_title h4 {
+        font-size: 14px;
+    }
+    .cm_step_block {
+        max-width: 730px;
+    }
+    .form_title {
+        font-size: 14px;
+    }
+    .time_block_inner ul li {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .select_time_block{
+        padding-left: 20px;
+    }
+    .time_block_inner ul {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .time_block_inner ul.cm_select_btn li p{
+        width: 80px;
+    }
+    .form_input_box {
+        width: 30.9%;
+    }
+    .address_white_box span {
+        font-size: 17px;
+    }
+    .address_white_box_container {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .form_address_block {
+        padding-bottom: 30px;
+    }
+    .form_address_boxes {
+        margin-top: 20px;
+    }
+    .address_white_box{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .address_white_box:last-child{
+        margin-bottom: 0;
+    }
+    .select_date_block {
+        padding-right: 20px;
+        width: 50%;
+    }
+    .terminvergabe_title {
+        padding: 15px;
+    }
+    .buchung_block_outer {
+        padding: 23px 15px;
+    }
+    .terminvergabe_title h2 {
+        font-size: 14px;
+    }
+    
+    .Unternehmen_table_left {
+        width: 65%;
+        padding-right: 30px;
+    }
+    .Unternehmen_table_right {
+        width: calc(100% - 65%);
+    }
+    .bitte_lade_hie_box .rech_title_text{
+        position: unset;
+        margin-top: 25px;
+       justify-content: flex-start;
+    }
+    .cm_4{
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    .stan_cm_row{
+        flex-wrap: wrap;
+    }
+    .cm_4:last-child{
+        margin-bottom: 0;
+    }
+    
+}
+
+@media (max-width: 767px){
+    header, .db_common_heading_box, .db_display_box{
+        padding: 15px;
+    }
+    .bitte_lade_hie_box .rech_title_text h4{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+     /*============== Error Page Start ===============*/
+     .error_info h3{
+        font-size: 22px;
+        margin: 30px 0 15px;
+    }
+    .error_info p{
+        font-size: 18px;
+    }
+    /*============== Error Page End ===============*/
+
+    .dataTables_wrapper .dataTables_paginate{
+        margin: 0px;
+    }
+    .dataTables_wrapper .dataTables_info {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .dataTables_wrapper .dataTables_length{
+        flex-grow: 1;
+    }
+    .common_table_wrap{
+        padding-bottom: 15px;
+    }
+    /*============== Termine Page End ===============*/
+    .dataTables_wrapper .dataTables_filter{
+        margin-top: 0 !important;
+    }
+    .step_block {
+        width: 100%;
+    }
+    .cm_step_block {
+        max-width: 100%;
+        margin: 0 25px;
+    }
+    .cm_steps {
+        padding: 15px 10px;
+    }
+    .step_btns {
+        padding: 10px 0;
+    }
+    .form_input_box {
+        width: 46.5%;
+        margin-top: 15px;
+    }
+    .form_title,
+    .step_name p {
+        font-size: 12px;
+    }
+    .select_date_block .date_block {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .select_date_block {
+        width: 100%;
+        padding-right: 0;
+    }
+    .form_block {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .select_period_inner, .time_block_inner {
+        padding-top: 20px;
+    }
+    ul.cm_select_btn li p{
+        width: 80px;
+        padding: 7px;
+    }
+    .cm_page_logo {
+        padding-bottom: 20px;
+    }
+    .step_btns .common_btn{
+        font-size: 12px;
+    }
+    .cm_page_logo .logo a {
+        font-size: 30px;
+    }
+    .form_address_boxes .address_box {
+        padding: 10px;
+    }
+    .select_period_inner ul {
+        width: 170px;
+    }
+    .time_block_inner ul.cm_select_btn li p {
+        width: 60px;
+    }
+    .step_btns .step_btns_inner {
+        padding: 0 15px;
+    }
+    .buchung_bottom_info{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .buchung_date_left,
+    .buchung_date_block {
+        width: 100%;
+    }
+    .buchung_date_left_inner {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .buchung_input_box .common_input input {
+        width: 100%;
+    }
+    .buchung_time_box {
+        margin-top: 20px;
+    }
+    .cm_checkbox {
+        width: 49%;
+    }
+    .buchung_checkbox_block {
+        width: calc(100% - 251px);
+        padding-left: 20px;
+    }
+    
+    .Unternehmen_table_left {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .Unternehmen_table_right {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .Unternehmen_table {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .Unternehmen_table .tb_heading_modal {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .Unternehmen_table:after {
+        display: none;
+    }
+    .sta_col_left, .st_check_info{
+        width: 100%;
+    }
+    .st_check_info{
+        margin-bottom: 10px;
+    }
+    .sta_col_right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .common_sta_hold, .standort_anlegen_wrap .common_white_box_title, .stand_check_in_hold, .stan_cm_row{
+        flex-wrap: wrap;
+    }
+    .stan_common_title h3, .common_white_box_title h3, .cm_4{
+        width: 100%;
+    }
+    .stan_common_title .common_btn, .standort_anlegen_wrap .common_white_box_title .common_btn {
+        margin-top: 20px;
+    }
+    .stand_check_in_hold .common_input{
+        max-width: 100%;
+        width: 100%;
+    }
+    
+  
+
+}
+
+@media (max-width: 575px){
+    .logout_icon{
+        margin: 0 0 0 20px;
+    }
+   
+    .header_block{
+        justify-content: space-between;
+    }
+    .header_left_content{
+        width: auto;
+        margin: unset;
+    }
+    .logout_icon img{
+        max-width: 20px;
+    }
+    .header_common_btn .common_btn{
+        padding: 9px 15px;
+    }
+    .menu_trigger img {
+        min-width: 20px;
+    }
+    .sidebar_reduced .menu_trigger {
+        display: none;
+    }
+    .main_content_lg{
+        padding-top: 63px;
+    }
+    .logo a{
+        margin: 0 20px 0 0;
+    }
+    .cm_col_20, .cm_col_40 {
+        width: 50%;
+    }
+    .terimin_content .modal-body, #mitarbeiter_bearbeiten.common_modal .modal-body {
+          padding: 20px 20px;
+    }
+    .cm_small_common .modal-body{
+        padding-top: 35px;
+    }
+    .tb_heading_modal:after, #mitarbeiter_bearbeiten.common_modal .tb_heading_modal:after{
+        left: -20px;
+        right: -20px;
+    }
+    .btn-close{
+        top: 6px;
+        right: 6px;
+    }
+    .checkin_btn .m_btn {
+        margin-bottom: 15px;
+    }
+    .checkin_btn .m_btn:last-child{
+        margin-bottom: 0;
+        margin-bottom: 0;
+    }
+    .checkin_btn .m_btn button{
+        padding: 8px 20px;
+    }
+    .test_aus_btn .m_btn button{
+        margin-bottom: 15px;
+    }
+    .testergebis_pin_content ul li{
+        width: 100%;
+    }
+    .testergebis_pin_content ul li + li {
+        margin-top: 15px;
+    }
+    .testergebis_pin_content ul{
+        margin-bottom: 30px;
+    }
+    .cm_success_title h3{
+        margin-bottom: 15px;
+    }
+    .cm_success_ic img {
+        max-width: 80px;
+    }
+    .mu_label_col{
+        width: 100%;
+    }
+    .mu_input_col{
+        width: 100%;
+        padding-left: 0;
+    }
+    .mu_label_col p{
+        margin-bottom: 5px;
+    }
+    .unternehmen_content_wrap .common_box_btn {
+        margin-top: 20px;
+    }
+    .common_geray_box, .common_white_box{
+        padding: 15px;
+    }
+    .common_white_box_title{
+        padding-bottom: 20px;
+    }
+    /*============== Error Page Start ===============*/
+    .error_info h3{
+        font-size: 20px;
+        margin: 20px 0 15px;
+    }
+    .error_info p{
+        font-size: 16px;
+    }
+    .error_wrapper .logo{
+        left: 15px;
+        top: 15px;
+    }
+    /*============== Error Page End ===============*/
+
+    .common_table_inner::after{ 
+        padding: 20px 15px;
+    }
+    table.dataTable.common_table_inner {
+        padding: 77px 15px 20px 15px;
+    }
+    .dataTables_wrapper .dataTables_filter input{
+        min-height: 50px;
+        padding: 10px 61px 10px 15px
+    }
+    .dataTables_wrapper .dataTables_filter{
+        text-align: left;
+    }
+    .komplette_table_block .common_table_inner::after {
+        padding-bottom: 80px;
+    }
+    .komplette_table_block .dataTables_wrapper .dataTables_filter{
+        padding: 0 15px;
+    }
+    .mitarbeiter_die_table .dataTables_filter{
+		display: block;
+	}
+	.mitarbeiter_die_table .dataTables_wrapper .dataTables_filter label{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.create_employee {
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+    .cm_small_common .modal-dialog{
+        max-width: 100%;
+    }
+    .cm_bottom_info {
+        padding: 0 15px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .step_name {
+        height: 39px;
+    }
+    .form_input_box {
+        width: 45.5%;
+    }
+    .step_number p {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .form_address_boxes .address_box {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .form_address_boxes {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .form_address_block {
+        padding-bottom: 20px;
+    }
+    .address_white_box_container {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .address_white_box_container.address{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .address_white_box.tel {
+        margin-bottom: 0px;
+        min-height: 70px;
+        width: 48%;
+    }
+    .step_btns .common_btn,
+    .step_btns .common_btn.submit,
+    .step_btns .common_btn.next {
+        padding: 6.5px 14px;
+    }
+    .form-wizard {
+        padding-top: 15px;
+    }
+    .form_block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .select_period_block{
+        padding-top: 20px;
+    }
+    .select_period_inner, .time_block_inner {
+        padding-top: 10px;
+    }   
+    .select_period_inner ul {
+        width: 100%;
+    }
+    .select_period_inner ul li {
+        width: 30%;
+    }
+    ul.cm_select_btn li p {
+        width: 100%;
+        font-size: 10px;
+    }
+    .time_block_inner ul.cm_select_btn li p {
+        width: 100%;
+    }
+    .time_block_inner ul li {
+        width: 31%;
+        margin-right: 0;
+    }
+    .select_time_block {
+        padding-top: 20px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .time_block_inner ul {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .select_date_block .date_block {
+        margin-bottom: 5px;
+    }
+    .buchung_block {
+        padding: 20px 15px;
+    }
+    .toggle_switch.form-check-input {
+        width: 26px;
+        height: 16px;
+    }
+    .buchung_title p {
+        font-size: 12px;
+    }
+    .toggle_switch_block label {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .buchung_top_info{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;   
+        margin-top: 15px;
+    }
+    .buchung_input_block {
+        width: 100%;
+    }
+    .buchung_checkbox_block {
+        margin-top: 20px;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .all_checkboxes {
+        padding-top: 10px;
+    }
+    .terminvergabe_title h2 {
+        font-size: 12px;
+    }
+    .buchung_block_outer {
+        padding: 15px;
+    }
+    .buchung_date_left_inner .buchung_title p{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .cm_checkbox {
+        width: 30%;
+    }
+    .buchung_input_box .common_input {
+        width: 50%;
+    }
+    .buchung_input_box label .span_title {
+        font-size: 12px;
+    }
+    .all_inputboxes_block .mu_common_row {
+        margin-bottom: 8px;
+    }
+    .popup_table_block .table td, .popup_table_block .table th {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .table_titles p {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .table_titles span {
+        font-size: 12px;
+    }
+    .Unternehmen_table .tb_heading_modal {
+        margin-bottom: 10px;
+    }
+    .mu_common_row.password_input {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .password_input .mu_input_col {
+        width:100%;
+    }
+    .standortverwaltung_table table.dataTable.common_table_inner{
+        padding-top: 150px;
+    }
+    .standortverwaltung_table .dataTables_filter{
+        left: 20px;
+        right: unset;
+        top: 80px;
+    }
+    .standortverwaltung_page .common_table_inner::after {
+        padding-bottom: 90px;
+    }
+    
+}
+
+@media (max-width: 480px){
+    .schne_btn button{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .schne_btn button:last-child{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 450px){
+    .m_col_half{
+        width: 100%;
+    }
+    .modal-dialog{
+        margin: 15px;
+        min-height: calc(100% - 2rem);
+    }
+    /*============== Error Page Start ===============*/
+    .common_info_wrap{
+        padding: 15px;
+    }
+    .common_info_wrap_inner .common_input input{
+        min-height: 45px;
+    }
+    .common_info_wrap_inner {
+        margin: 35px 0 0;
+    }
+    .common_info_wrap{
+        min-height: 500px;
+    }
+    .form_group .round label{
+        font-size: 11px;
+    }
+    .form_group {
+        padding-left: 0px;
+    }
+    .form_group .round label{
+        padding-left: 28px;
+    }
+    .form_group {
+        padding-left: 10px;
+    }
+    .passwort_show_hide{
+        right: 15px;
+    }
+    .passwort_wrap input {
+        padding-right: 50px;
+    }
+    /*============== Error Page End ===============*/
+    .form_input_box {
+        width: 100%;
+    }
+    .cm_bottom_info {
+        margin-top: 30px;
+    }
+    .step_btns .step_btns_inner {
+        padding: 0px 10px;
+    }
+    .address_white_box span {
+        font-size: 14px;
+    }
+    .step_name p {
+        font-size: 11px;
+    }
+    .cm_step_formbox {
+        margin: 0px 10px;
+    }
+    .cm_step_title, .cm_top_title {
+        padding: 15px 10px;
+    }
+    .cm_step_block {
+        margin: 0 15px;
+    }
+    .cm_checkbox {
+        width: 50%;
+    }
+    .buchung_input_box .common_input {
+        width: 100%;
+    }
+    .buchung_date_box {
+        margin-top: 20px;
+    }
+    .buchung_date_block .buchung_input_box{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .buchung_block_title{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .toggle_switch_block {
+        margin-top: 10px;
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .buchung_date_block .buchung_input_box label{
+        padding-bottom: 5px;
+    }
+    .buchung_date_left {
+        margin-top: 10px;
+    }
+    .firma_row{
+        flex-wrap: wrap;
+    }
+    .firma_col_left{
+        width: 100%;
+    }
+    .firma_row:nth-child(4) {
+        margin-bottom: 0
+    }
+    .firma_row + .firma_row {
+       margin-top: 20px;
+    }
+    .sam_serch_hlod, .sam_m_common_row {
+        flex-wrap: wrap;
+    }
+    .sam_m_common_row p, .sam_serch_hlod p{
+        margin-bottom: 5px;
+    }
+   
+}
+
+@media (max-width: 400px){
+    .cm_col_20, .cm_col_40 {
+        width: 100%;
+    }
+    .test_aus_btn .m_btn button {
+        min-width: 120px;
+        margin-right: 8px;
+    }
+    .schne_btn .common_black_btn_border{
+        padding: 10px 15px;
+    }
+    .checkin_btn .m_btn button + button {
+        margin-left: 5px;
+    }
+    .checkin_btn .m_btn button {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 367px){
+    .header_common_btn .common_btn {
+        padding: 9px 10px;
+        font-size: 10px;
+    }
+    .logo a {
+        margin: 0 10px 0 0;
+    }
+    .logout_icon {
+        margin: 0 0 0 10px;
+    }
+    .main_content_lg {
+        padding-top: 61px;
+    }
+}
+
+@media (max-width:360px){
+    .form_address_block, .all_inputbox_outer {
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+    .step_btns .common_btn {
+        padding: 6.5px 12px;
+        font-size: 11px;
+    }
+    .form_title{
+        font-size: 13px;
+    }
+    .form_input_box label {
+        margin-bottom: 3px;
+    }
+    .btn_wrap .step_btns_inner{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .btn_wrap .step_btns_inner .common_btn.back{
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 991px) and (orientation: landscape){
+    .error_img img {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 575px) and (orientation: landscape){
+    .error_img img {
+        max-width: 280px;
+    }
+   
+}
+@media screen and (max-width: 850px) and (max-height: 375px){
+    .modal-dialog-centered {
+        min-height: calc(100% - 2rem);
+    }
+    .modal-dialog{
+        margin: 1rem auto;
+    }
+    .cm_small_common .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) and (max-height: 375px){
+    .stand_check_in_hold .common_input input{
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
