@@ -1,555 +1,537 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mein Unternehmen Page</title>
-    
-    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
-    
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link href="assets/css/jquery.datetimepicker.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    
-    <!-- Style Sheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    
-</head>
-<body>
-    <div class="main_wrapper">
-        <!-- Header Start -->
-        <div class="header_wrapper">
-            <header>
-                <div class="header_block">
-                    <div class="logo_trigger_hold">
-                        <div class="logo">
-                            <a href="#0"><span>TES</span>TOOLA</a>
-                        </div>
-                        <div class="menu_trigger">
-                            <a href="#0"><img src="assets/images/toggle_ic.svg" alt="trigger"></a>
-                        </div>
-                    </div>
-                    <div class="header_left_content">
-                        <div class="header_common_btn">
-                            <a href="#0" class="common_btn" data-bs-toggle="modal" data-bs-target="#termin_buchen">Termin buchen</a>
-                        </div>
-                        <div class="logout_icon">
-                            <a href="#0"><img src="assets/images/logout_ic.svg" alt="logout"></a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <!-- Header End -->
-        
-        <!-- Sidebar Start -->
-        <div class="sidebar_wrapper">
-            <div class="sidebar_block">
-                <div class="sidebar_menu_block">
-                    <div class="mobile_menu_header">
-                        <div class="logo">
-                            <div class="logo">
-                                <a href="index.html"><span>TES</span>TOOLA</a>
-                            </div>
-                        </div>
-                        <div class="close_trigger">
-                            <a href="#0"><img src="assets/images/close_menu_ic.svg" alt="trigger"></a>
-                        </div>
-                    </div>
-                    <div class="sidebar_menu">
-                        <ul>
-                            <li >
-                                <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu1.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Dashboard</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="termine.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Termine">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu2.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Termine</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Labor.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Labor">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu3.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Labor</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub_menu_title">
-                        <h3>EINSTELLUNGEN</h3>
-                    </div>
-                    <div class="sidebar_menu_sec">
-                        <ul>
-                            <li class="active">
-                                <a href="mein_unternehmen.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Mein Unternehmen">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu4.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Mein Unternehmen</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mitarbeiter.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Mitarbeiter">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu7.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Mitarbeiter</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="standortverwaltung.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Standortverwaltung">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu6.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Standortverwaltung</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cm-overlay"></div>
-        <!-- Sidebar End -->
-        
-        <!-- Main Content Start -->
-        <div class="main_content">
-            <div class="main_content_lg">
-                <div class="db_common_heading_box">
-                    <h2 class="wow fadeInUp">Mein unternehmen</h2>
-                </div>
-                
-                <div class="common_content_pad_block">
-                    <div class="common_white_box">
-                        <div class="common_white_box_title">
-                            <h3>Bitte hinterlege hier alle relevanten Unternehmensdaten</h3>
-                        </div>
-
-                        <div class="rechnungsadresse_wrapper">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="common_geray_box firma_geray_box wow fadeInUp" data-wow-duration="2.5s">
-                                        <div class="firma_content_block">
-                                            <div class="firma_row">
-                                                <div class="firma_col_left">
-                                                    <div class="firma_title">
-                                                        <h3>Firma:</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="firma_col_right">
-                                                    <div class="firma_desc">
-                                                        <h3>Mustermann GmbH</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="firma_row">
-                                                <div class="firma_col_left">
-                                                    <div class="firma_info">
-                                                        <p>Ansprechpartner:</p>
-                                                    </div>
-                                                </div>
-                                                <div class="firma_col_right">
-                                                    <div class="firma_info">
-                                                        <p>Max Mustermann</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="firma_row">
-                                                <div class="firma_col_left">
-                                                    <div class="firma_info">
-                                                        <p>Straße + Nr.:</p>
-                                                    </div>
-                                                </div>
-                                                <div class="firma_col_right">
-                                                    <div class="firma_info">
-                                                        <p>Musterstraße 1</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="firma_row">
-                                                <div class="firma_col_left">
-                                                    <div class="firma_info">
-                                                        <p>PLZ + Ort:</p>
-                                                    </div>
-                                                </div>
-                                                <div class="firma_col_right">
-                                                    <div class="firma_info">
-                                                        <p>12345 Musterstadt</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="firma_row">
-                                                <div class="firma_col_left">
-                                                    <div class="firma_info">
-                                                        <p>Telefon:</p>
-                                                    </div>
-                                                </div>
-                                                <div class="firma_col_right">
-                                                    <div class="firma_info">
-                                                        <p>0170 / 12 34 56 78</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="firma_row">
-                                                <div class="firma_col_left">
-                                                    <div class="firma_info">
-                                                        <p>E-Mail</p>
-                                                    </div>
-                                                </div>
-                                                <div class="firma_col_right">
-                                                    <div class="firma_info">
-                                                        <p>maxmustermann@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="common_geray_box bitte_lade_hie_box wow fadeInUp" data-wow-duration="2.5s">
-                                        <div class="agb_wrap">
-                                            <div class="row">
-                                                <div class="col-lg-8">
-                                                    <div class="agb_box_wrap">
-                                                        <div class="file-upload">
-                                                            <p class="agb_text_label">AGB</p>
-                                                            <div class="file-upload-select">
-                                                                <div class="file-select-button">Datei</div>
-                                                                <div class="file-select-name"></div> 
-                                                                <input type="file" name="file-upload-input" class="file-upload-input">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <div class="agb_box_wrap">
-                                                        <div class="file-upload">
-                                                            <p class="agb_text_label">Datenschutzerklärung</p>
-                                                            <div class="file-upload-select">
-                                                                <div class="file-select-button">Datei</div>
-                                                                <div class="file-select-name"></div> 
-                                                                <input type="file" name="file-upload-input" class="file-upload-input">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <div class="agb_box_wrap">
-                                                        <div class="file-upload">
-                                                            <p class="agb_text_label">Einverständniserklärung</p>
-                                                            <div class="file-upload-select">
-                                                                <div class="file-select-button">Datei</div>
-                                                                <div class="file-select-name"></div> 
-                                                                <input type="file" name="file-upload-input" class="file-upload-input">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="rech_title_text">
-                                            <button class="common_btn" data-bs-toggle="modal" data-bs-target="#speicherung_daten">Speichern</button>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="common_geray_box wow fadeInUp" data-wow-duration="2.5s">
-                                        <div class="rech_title_text">
-                                            <h4>Mein Unternehmen (Rechnungsadresse)</h4>
-                                        </div> 
-                                        <div class="unternehmen_content_wrap">
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Firma</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Vorname</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Nachname</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Straße</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Postleitzahl</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Ort</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>E-Mail</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mu_common_row">
-                                                <div class="mu_label_col">
-                                                    <p>Telefonnummer</p>
-                                                </div>
-                                                <div class="mu_input_col">
-                                                    <div class="common_input">
-                                                        <input type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           
-                                            <div class="common_box_btn">
-                                                <button class="common_btn" data-bs-toggle="modal" data-bs-target="#speicherung_daten">Speichern</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-
-                               
-                            </div>
-                        </div>
-                    </div>
-
-                   
-                </div>
-            </div>
-        </div>
-        <!-- Main Content End -->
-        
-        <!-- Modal -->
-         <!-- Termin buchen Modal -->
-         <div class="modal fade common_modal" id="termin_buchen" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-body">
-                        <div class="tb_heading_modal">
-                            <h3>Manuellen Termin buchen</h3>
-                            <p>Buchen Sie hier einen manuellen Termin und geben die Daten ein.</p>
-                        </div>
-                        
-                        <div class="tb_content_block">
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Vorname">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_full">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Straße + Hausnummer">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Postleitzahl">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Ort">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="eamil" placeholder="E-Mail">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Telefon">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input date_picker">
-                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
-                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Ausweisnummer">
-                                    </div>
-                                </div>
-                            </div>
-                           
-                           
-                            <div class="modal_common_btn hea_modal_btn">
-                                <button class="common_btn" data-bs-toggle="modal" data-bs-target="#termin_buchen_estatigung">Einchecken</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </div>
-
-        <!-- Termin buchen Bestätigung Modal -->
-        <div class="modal fade common_modal cm_small_common" id="termin_buchen_estatigung" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Person wurde eingecheckt!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest durchgeführt werden.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Checkin Bestätigung der Stornierung Modal -->
-        <div class="modal fade common_modal cm_small_common" id="speicherung_daten" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Ihre Daten wurden gespeichert!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Ihre Daten haben wir gespeichert <br>und im System aktualisiert.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
-    </div>
-    
-            
-        <script src="assets/js/jquery3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script> 
-        <script src="assets/js/jquery.datetimepicker.full.min.js" ></script> 
-        <script src= "assets/js/wow.js"> </script>
-        <script src="assets/js/custom.js"></script>
-        
-        <script>
-            $(document).ready(function(){
-                $(function () {
-                   
-                });
-                jQuery.datetimepicker.setLocale('de');
-
-                jQuery('.startDate').datetimepicker({
-                    i18n:{
-                        de:{
-                            months:[
-                                'Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember',
-                            ]
-                        }
-                    },
-                    dayOfWeekStart: 1,
-                    timepicker:false,
-                    format:'d.m.Y'
-                });            
-
-
-                jQuery('.startTime').datetimepicker({
-                    datepicker:false,
-                    format:'h:m a',
-                    step : 1
-
-                });
-            });
-            
-            //File Upload Js
-            $('input[type="file"]').change(function(e){
-                    var fileName = e.target.files[0].name;
-                    $(this).parents('.file-upload').find('.file-select-name').text(fileName);
-            });
-        </script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mein Unternehmen Page</title>
+    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/jquery.datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <!-- Header Start -->
+        <div class="header_wrapper">
+            <header>
+                <div class="header_block">
+                    <div class="logo_trigger_hold">
+                        <div class="logo">
+                            <a href="#0"><span>CAS</span>TOOLA</a>
+                        </div>
+                        <div class="menu_trigger">
+                            <a href="#0"><img src="assets/images/toggle_ic.svg" alt="trigger"></a>
+                        </div>
+                    </div>
+                    <div class="header_left_content">
+                        <div class="header_common_btn">
+                            <a href="#0" class="common_btn" data-bs-toggle="modal"
+                                data-bs-target="#termin_buchen">Termin buchen</a>
+                        </div>
+                        <div class="logout_icon">
+                            <a href="#0"><img src="assets/images/logout_ic.svg" alt="logout"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Header End -->
+        <!-- Sidebar Start -->
+        <div class="sidebar_wrapper">
+            <div class="sidebar_block">
+                <div class="sidebar_menu_block">
+                    <div class="mobile_menu_header">
+                        <div class="logo">
+                            <div class="logo">
+                                <a href="index.html"><span>CAS</span>TOOLA</a>
+                            </div>
+                        </div>
+                        <div class="close_trigger">
+                            <a href="#0"><img src="assets/images/close_menu_ic.svg" alt="trigger"></a>
+                        </div>
+                    </div>
+                    <div class="sidebar_menu">
+                        <ul>
+                            <li>
+                                <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Dashboard">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu1.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Dashboard</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="termine.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Termine">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu2.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Termine</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Labor.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Labor">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu3.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Labor</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_menu_title">
+                        <h3>EINSTELLUNGEN</h3>
+                    </div>
+                    <div class="sidebar_menu_sec">
+                        <ul>
+                            <li class="active">
+                                <a href="mein_unternehmen.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Mein Unternehmen">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu4.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Mein Unternehmen</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mitarbeiter.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Mitarbeiter">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu7.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Mitarbeiter</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="standortverwaltung.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Standortverwaltung">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu6.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Standortverwaltung</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cm-overlay"></div>
+        <!-- Sidebar End -->
+        <!-- Main Content Start -->
+        <div class="main_content">
+            <div class="main_content_lg">
+                <div class="db_common_heading_box">
+                    <h2 class="wow fadeInUp">Mein unternehmen</h2>
+                </div>
+                <div class="common_content_pad_block">
+                    <div class="common_white_box">
+                        <div class="common_white_box_title">
+                            <h3>Bitte hinterlege hier alle relevanten Unternehmensdaten</h3>
+                        </div>
+                        <div class="rechnungsadresse_wrapper">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="common_geray_box firma_geray_box wow fadeInUp" data-wow-duration="2.5s">
+                                        <div class="firma_content_block">
+                                            <div class="firma_row">
+                                                <div class="firma_col_left">
+                                                    <div class="firma_title">
+                                                        <h3>Firma:</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="firma_col_right">
+                                                    <div class="firma_desc">
+                                                        <h3>Mustermann GmbH</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="firma_row">
+                                                <div class="firma_col_left">
+                                                    <div class="firma_info">
+                                                        <p>Ansprechpartner:</p>
+                                                    </div>
+                                                </div>
+                                                <div class="firma_col_right">
+                                                    <div class="firma_info">
+                                                        <p>Max Mustermann</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="firma_row">
+                                                <div class="firma_col_left">
+                                                    <div class="firma_info">
+                                                        <p>Straße + Nr.:</p>
+                                                    </div>
+                                                </div>
+                                                <div class="firma_col_right">
+                                                    <div class="firma_info">
+                                                        <p>Musterstraße 1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="firma_row">
+                                                <div class="firma_col_left">
+                                                    <div class="firma_info">
+                                                        <p>PLZ + Ort:</p>
+                                                    </div>
+                                                </div>
+                                                <div class="firma_col_right">
+                                                    <div class="firma_info">
+                                                        <p>12345 Musterstadt</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="firma_row">
+                                                <div class="firma_col_left">
+                                                    <div class="firma_info">
+                                                        <p>Telefon:</p>
+                                                    </div>
+                                                </div>
+                                                <div class="firma_col_right">
+                                                    <div class="firma_info">
+                                                        <p>0170 / 12 34 56 78</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="firma_row">
+                                                <div class="firma_col_left">
+                                                    <div class="firma_info">
+                                                        <p>E-Mail</p>
+                                                    </div>
+                                                </div>
+                                                <div class="firma_col_right">
+                                                    <div class="firma_info">
+                                                        <p>maxmustermann@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="common_geray_box bitte_lade_hie_box wow fadeInUp"
+                                        data-wow-duration="2.5s">
+                                        <div class="agb_wrap">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="agb_box_wrap">
+                                                        <div class="file-upload">
+                                                            <p class="agb_text_label">AGB</p>
+                                                            <div class="file-upload-select">
+                                                                <div class="file-select-button">Datei</div>
+                                                                <div class="file-select-name"></div>
+                                                                <input type="file" name="file-upload-input"
+                                                                    class="file-upload-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="agb_box_wrap">
+                                                        <div class="file-upload">
+                                                            <p class="agb_text_label">Datenschutzerklärung</p>
+                                                            <div class="file-upload-select">
+                                                                <div class="file-select-button">Datei</div>
+                                                                <div class="file-select-name"></div>
+                                                                <input type="file" name="file-upload-input"
+                                                                    class="file-upload-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="agb_box_wrap">
+                                                        <div class="file-upload">
+                                                            <p class="agb_text_label">Einverständniserklärung</p>
+                                                            <div class="file-upload-select">
+                                                                <div class="file-select-button">Datei</div>
+                                                                <div class="file-select-name"></div>
+                                                                <input type="file" name="file-upload-input"
+                                                                    class="file-upload-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rech_title_text">
+                                            <button class="common_btn" data-bs-toggle="modal"
+                                                data-bs-target="#speicherung_daten">Speichern</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="common_geray_box wow fadeInUp" data-wow-duration="2.5s">
+                                        <div class="rech_title_text">
+                                            <h4>Mein Unternehmen (Rechnungsadresse)</h4>
+                                        </div>
+                                        <div class="unternehmen_content_wrap">
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Firma</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Vorname</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Nachname</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Straße</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Postleitzahl</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Ort</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>E-Mail</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mu_common_row">
+                                                <div class="mu_label_col">
+                                                    <p>Telefonnummer</p>
+                                                </div>
+                                                <div class="mu_input_col">
+                                                    <div class="common_input">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="common_box_btn">
+                                                <button class="common_btn" data-bs-toggle="modal"
+                                                    data-bs-target="#speicherung_daten">Speichern</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content End -->
+        <!-- Modal -->
+        <!-- Termin buchen Modal -->
+        <div class="modal fade common_modal" id="termin_buchen" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Manuellen Termin buchen</h3>
+                            <p>Buchen Sie hier einen manuellen Termin und geben die Daten ein.</p>
+                        </div>
+                        <div class="tb_content_block">
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Vorname">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_full">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Straße + Hausnummer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Postleitzahl">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ort">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="eamil" placeholder="E-Mail">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Telefon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input date_picker">
+                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
+                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ausweisnummer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_common_btn hea_modal_btn">
+                                <button class="common_btn" data-bs-toggle="modal"
+                                    data-bs-target="#termin_buchen_estatigung">Einchecken</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Termin buchen Bestätigung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="termin_buchen_estatigung" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Person wurde eingecheckt!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest
+                                    durchgeführt werden.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Checkin Bestätigung der Stornierung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="speicherung_daten" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Ihre Daten wurden gespeichert!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Ihre Daten haben wir gespeichert <br>und im System aktualisiert.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/js/wow.js"> </script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+            });
+            jQuery.datetimepicker.setLocale('de');
+            jQuery('.startDate').datetimepicker({
+                i18n: {
+                    de: {
+                        months: [
+                            'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember',
+                        ]
+                    }
+                },
+                dayOfWeekStart: 1,
+                timepicker: false,
+                format: 'd.m.Y'
+            });
+            jQuery('.startTime').datetimepicker({
+                datepicker: false,
+                format: 'h:m a',
+                step: 1
+            });
+        });
+        //File Upload Js
+        $('input[type="file"]').change(function (e) {
+            var fileName = e.target.files[0].name;
+            $(this).parents('.file-upload').find('.file-select-name').text(fileName);
+        });
+    </script>
+</body>
+</html>

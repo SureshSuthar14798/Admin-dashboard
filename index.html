@@ -1,1029 +1,1012 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard Page</title>
-    
-    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
-    
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link href="assets/css/jquery.datetimepicker.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-    
-    <!-- Style Sheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-    
-    
-</head>
-<body>
-    <div class="main_wrapper">
-        <!-- Header Start -->
-        <div class="header_wrapper">
-            <header>
-                <div class="header_block">
-                    <div class="logo_trigger_hold">
-                        <div class="logo">
-                            <a href="index.html"><span>TES</span>TOOLA</a>
-                        </div>
-                        <div class="menu_trigger">
-                            <a href="#0"><img src="assets/images/toggle_ic.svg" alt="trigger"></a>
-                        </div>
-                    </div>
-                    <div class="header_left_content">
-                        <div class="header_common_btn">
-                            <a href="#0" class="common_btn" data-bs-toggle="modal" data-bs-target="#termin_buchen">Termin buchen</a>
-                        </div>
-                        <div class="logout_icon">
-                            <a href="#0"><img src="assets/images/logout_ic.svg" alt="logout"></a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <!-- Header End -->
-        
-        <!-- Sidebar Start -->
-        <div class="sidebar_wrapper">
-            <div class="sidebar_block">
-                <div class="sidebar_menu_block">
-                    <div class="mobile_menu_header">
-                        <div class="logo">
-                            <div class="logo">
-                                <a href="#0"><span>TES</span>TOOLA</a>
-                            </div>
-                        </div>
-                        <div class="close_trigger">
-                            <a href="#0"><img src="assets/images/close_menu_ic.svg" alt="trigger"></a>
-                        </div>
-                    </div>
-                    <div class="sidebar_menu">
-                        <ul>
-                            <li class="active">
-                                <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu1.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Dashboard</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="termine.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Termine">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu2.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Termine</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Labor.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Labor">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu3.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Labor</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub_menu_title">
-                        <h3>EINSTELLUNGEN</h3>
-                    </div>
-                    <div class="sidebar_menu_sec">
-                        <ul>
-                            <li class="">
-                                <a href="mein_unternehmen.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Mein Unternehmen">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu4.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Mein Unternehmen</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mitarbeiter.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Mitarbeiter">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu7.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Mitarbeiter</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="standortverwaltung.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Standortverwaltung">
-                                    <div class="menu_icon">
-                                        <img src="assets/images/sidebar_menu6.svg" alt="icon">
-                                    </div>
-                                    <div class="menu_text">Standortverwaltung</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cm-overlay"></div>
-        <!-- Sidebar End -->
-        
-        <!-- Main Content Start -->
-        <div class="main_content">
-            <div class="main_content_lg">
-                <div class="db_common_heading_box">
-                    <h2 class="wow fadeInUp">Dashboard</h2>
-                </div>
-                
-                <div class="common_content_pad_block">
-                    <div class="db_content_box_block">
-                        <div class="row">
-                            <div class="cm_col_20">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="1s">
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic1.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Anmeldung</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>48</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>gebuchte Termine</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cm_col_20">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.2s">
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic2.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Durchgeführte Tests</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>29</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>Insgesamt</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cm_col_20">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.4s">
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic3.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Negativ</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>79</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>negative Tests</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cm_col_20">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.6s">
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic3.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Nicht eindeutig</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>68</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>nicht eindeutige Tests</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cm_col_20">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.8s">
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic3.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Positiv</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>68</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>positive Tests</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cm_col_40">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="2s">
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic4.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Aktuell eingecheckte Personen</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>48</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>Personen die aktuell auf den Test warten</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cm_col_40">
-                                <div class="db_display_box wow fadeInUp" data-wow-duration="2.2s">
-                                    <div class="notify_block">
-                                        <div class="notify_ic">
-                                            <a href="javascript:void(0)" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="Dies ist ein Hilfetext. Diese Box passt sich je nach Inhalt selbstständig an und wird somit größer oder auch kleiner. Die Breite"><img src="assets/images/bell_ic.svg" alt="bell"></a>
-                                        </div>
-                                    </div>
-                                    <div class="db_dispaly_icon">
-                                        <img src="assets/images/db_ic5.svg" alt="icon">
-                                    </div>
-                                    <div class="db_display_title">
-                                        <h3>Aktuell laufende Schnelltests</h3>
-                                    </div>
-                                    <div class="db_display_number">
-                                        <h4>48</h4>
-                                    </div>
-                                    <div class="db_display_desc">
-                                        <p>Schnelltests die die aktuell durchgeführt werden</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="komplette_table_wrapper">
-                        <div class="komplette_table_block">
-                            <div class="common_table_wrap ">
-                                <table id="testool_tables" data-page-length='13' class="common_table_inner">
-                                    <thead>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox1">
-                                                        <label for="checkbox1" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>Termin</p>
-                                            </td>
-                                            <td>
-                                                <p>Vorname</p>
-                                            </td>
-                                            <td>
-                                                <p>Nachname</p>
-                                            </td>
-                                            <td>
-                                                <p>Geburtsdatum</p>
-                                            </td>
-                                            <td>
-                                                <p>Testergebnis</p>
-                                            </td>
-                                            <td>
-                                                <p>Status</p>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox2">
-                                                        <label for="checkbox2" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>26.10.2021  11:15</p>
-                                            </td>
-                                            <td>
-                                                <p>Sandro</p>
-                                            </td>
-                                            <td>
-                                                <p>Mühlbauer</p>
-                                            </td>
-                                            <td>
-                                                <p>15.10.1989</p>
-                                            </td>
-                                            <td>
-                                                <p></p>
-                                            </td>
-                                            <td>
-                                                <a href="#0" class="common_table_btn" data-bs-toggle="modal" data-bs-target="#checkin_modal">Check-In</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox3">
-                                                        <label for="checkbox3" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>26.10.2021  11:20</p>
-                                            </td>
-                                            <td>
-                                                <p>Sandro</p>
-                                            </td>
-                                            <td>
-                                                <p>Mühlbauer</p>
-                                            </td>
-                                            <td>
-                                                <p>15.10.1989</p>
-                                            </td>
-                                            <td>
-                                                <p></p>
-                                            </td>
-                                            <td>
-                                                <a href="#0" class="common_table_btn test_btn" data-bs-toggle="modal" data-bs-target="#test_starten_bestatigung">Test starten</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox4">
-                                                        <label for="checkbox4" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>26.10.2021  11:15</p>
-                                            </td>
-                                            <td>
-                                                <p>Sandro</p>
-                                            </td>
-                                            <td>
-                                                <p>Mühlbauer</p>
-                                            </td>
-                                            <td>
-                                                <p>15.10.1989</p>
-                                            </td>
-                                            <td>
-                                                <p class="db_t_label">Test läuft aktuell</p>
-                                            </td>
-                                            <td>
-                                                <a href="#0" class="common_table_btn countdown_btn" id="ten-countdown-1" data-bs-toggle="modal" data-bs-target="#test_auswerten">00:15:50</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox5">
-                                                        <label for="checkbox5" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>26.10.2021  11:15</p>
-                                            </td>
-                                            <td>
-                                                <p>Sandro</p>
-                                            </td>
-                                           
-                                            <td>
-                                                <p>Mühlbauer</p>
-                                            </td>
-                                            <td>
-                                                <p>15.10.1989</p>
-                                            </td>
-                                            <td>
-                                                <p class="t_green_lable">Negativ</p>
-                                            </td>
-                                            <td>
-                                                <a href="#0" class="common_table_btn labor_btn" data-bs-toggle="modal" data-bs-target="#testergebnis_pin">Abgeschlossen</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox6">
-                                                        <label for="checkbox6" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>26.10.2021  11:15</p>
-                                            </td>
-                                            <td>
-                                                <p>Sandro</p>
-                                            </td>
-                                            <td>
-                                                <p>Mühlbauer</p>
-                                            </td>
-                                            <td>
-                                                <p>15.10.1989</p>
-                                            </td>
-                                            <td>
-                                                <p class="db_t_label">Nicht eindeutig</p>
-                                            </td>
-                                            <td>
-                                                <a href="#0" class="common_table_btn labor_btn" data-bs-toggle="modal" data-bs-target="#testergebnis_pin">Abgeschlossen</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table_group">
-                                                    <div class="round">
-                                                        <input type="checkbox" id="checkbox7">
-                                                        <label for="checkbox7" class="radio-label"></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p>26.10.2021  11:15</p>
-                                            </td>
-                                            <td>
-                                                <p>Sandro</p>
-                                            </td>
-                                            <td>
-                                                <p>Mühlbauer</p>
-                                            </td>
-                                            <td>
-                                                <p>15.10.1989</p>
-                                            </td>
-                                            <td>
-                                                <p class="t_red_label">Positiv</p>
-                                            </td>
-                                            <td>
-                                                <a href="#0" class="common_table_btn labor_btn" data-bs-toggle="modal" data-bs-target="#testergebnis_pin">Abgeschlossen</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Main Content End -->
-        
-        <!-- Modal -->
-        <!-- Termin buchen Modal -->
-        <div class="modal fade common_modal" id="termin_buchen" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-body">
-                        <div class="tb_heading_modal">
-                            <h3>Manuellen Termin buchen</h3>
-                            <p>Buchen Sie hier einen manuellen Termin und geben die Daten ein.</p>
-                        </div>
-                        
-                        <div class="tb_content_block">
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Vorname">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_full">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Straße + Hausnummer">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Postleitzahl">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Ort">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="eamil" placeholder="E-Mail">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Telefon">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input date_picker">
-                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
-                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Ausweisnummer">
-                                    </div>
-                                </div>
-                            </div>
-                           
-                           
-                            <div class="modal_common_btn hea_modal_btn">
-                                <button class="common_btn" data-bs-toggle="modal" data-bs-target="#termin_buchen_estatigung">Einchecken</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Termin buchen Bestätigung Modal -->
-        <div class="modal fade common_modal cm_small_common" id="termin_buchen_estatigung" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Person wurde eingecheckt!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest durchgeführt werden.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <!-- Checkin Modal -->
-         <div class="modal fade common_modal" id="checkin_modal" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-body">
-                        <div class="tb_heading_modal">
-                            <h3>Person einchecken</h3>
-                            <p>Hier bitte nochmals alle Daten überprüfen.</p>
-                        </div>
-                        
-                        <div class="tb_content_block">
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Vorname">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Nachname" >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_full">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Straße & Hausnummer">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Postleitzahl">
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Ort">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="eamil" placeholder="E-Mail" >
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Telefon">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_common_row">
-                                <div class="m_col_half">
-                                    <div class="common_input date_picker">
-                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
-                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
-                                    </div>
-                                </div>
-                                <div class="m_col_half">
-                                    <div class="common_input">
-                                        <input type="text" placeholder="Ausweisnummer eingeben">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="modal_common_btn checkin_btn">
-                                <div class="m_btn">
-                                    <button class="common_btn" data-bs-toggle="modal" data-bs-target="#checkin_bestatigung">Einchecken</button>
-                                    <button class="common_btn common_black_btn_border">Etikett drucken</button>
-                                </div>
-                                <div class="m_btn">
-                                    <button class="common_btn common_red_btn_border" data-bs-toggle="modal" data-bs-target="#checkin_bd_stornierung">Termin stornieren</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Checkin Bestätigung der Stornierung Modal -->
-        <div class="modal fade common_modal cm_small_common" id="checkin_bd_stornierung" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Der Termin wurde erfolgreich storniert!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Der gewünschte Termin wurde erfolgreich storniert. <br>Dieser Vorgang kann nicht Rückgängig gemacht werden.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <!-- Test starten Bestätigung Modal -->
-         <div class="modal fade common_modal cm_small_common" id="test_starten_bestatigung" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Der Test wurde gestartet!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Der Test wurde nun gestartet. Sieh auf die Uhr um festzustellen ob die Auswertung bereits erfolgen kann.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Test auswerten -->
-        <div class="modal fade common_modal" id="test_auswerten" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-body">
-                        <div class="tb_heading_modal">
-                            <h3>Testergebnis auswerten</h3>
-                            <p>Bitte hinterlege durch das drücken des Buttons das Testergebnis</p>
-                        </div>
-                        
-                        <div class="tb_content_block ">
-                            <div class="mc_test_auswertn_block">
-                                <div class="ts_col_mleft">
-                                    <div class="mts_content_box">
-                                        <h3>Max Mustermann</h3>
-                                        <p>01.01.1990</p>
-                                        <p>Musterstraße 1</p>
-                                        <p>12345 Musterstadt</p>
-                                        <p>0170 / 12 34 56 78</p>
-                                        <p>maxmustermann@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="ts_col_mright">
-                                    <div class="m_common_row">
-                                        <div class="m_col_half">
-                                            <div class="m_sub_inner_title">
-                                                <h3>Wie lange läuft der Test bereits?</h3>
-                                            </div>
-                                            <div class="common_input ">
-                                                <div id="ten-countdown" class="cm_countdown"></div>
-                                            </div>
-                                        </div>
-                                        <div class="m_col_half">
-                                            <div class="m_sub_inner_title">
-                                                <h3>Testkit-ID hinterlegen:</h3>
-                                            </div>
-                                            <div class="common_input">
-                                                <div class="common_input ">
-                                                    <input type="text" placeholder="ID eingeben">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal_common_btn test_aus_btn">
-                                <div class="m_sub_inner_title">
-                                    <h3>Wie ist das Ergebnis ausgefallen?</h3>
-                                </div>
-                                <div class="m_btn">
-                                    <button class="common_btn cm_green_btn" data-bs-toggle="modal" data-bs-target="#ist_dieses_testergebnis">Negativ</button>
-                                    <button class="common_btn cm_black_btn" data-bs-toggle="modal" data-bs-target="#ist_dieses_testergebnis">Nicht eindeutig</button>
-                                    <button class="common_btn cm_red_btn" data-bs-toggle="modal" data-bs-target="#ist_dieses_testergebnis">Positiv</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ist dieses Testergebnis -->
-        <div class="modal fade common_modal cm_small_common" id="ist_dieses_testergebnis" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_question_content">
-                            <div class="cm_question_title">
-                                <h3>Ist dieses Testergebnis wirklich richtig?</h3>
-                            </div>
-                            <div class="cm_question_btn">
-                                <button  class="common_btn cm_green_btn" data-bs-toggle="modal" data-bs-target="#test_auswerten_bestatigung">Ja</button>
-                                <button  class="common_btn cm_red_btn" data-bs-toggle="modal" data-bs-target="#test_auswerten">Nein</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <!-- Test auswerten Bestätigung Modal -->
-         <div class="modal fade common_modal cm_small_common" id="test_auswerten_bestatigung" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Das Testergebnis wurde gespeichert!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Das Testergebnis wurde gespeichert und automatisch per E-Mail an die Testperson übermittelt. Das Passwort zum öffnen findest du in den Kundendaten.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-         <!-- Testergebnis + PIN Modal -->
-         <div class="modal fade common_modal" id="testergebnis_pin" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-body">
-                        <div class="tb_heading_modal">
-                            <h3>Testergebis & PIN</h3>
-                            <p>Hier kannst du das Ergebnis erneut verschicken und die PIN einsehen</p>
-                        </div>
-                        
-                        <div class="testergebis_pin_content">
-                            <ul>
-                                <li>
-                                    <div class="tp_lable">
-                                        <p>Testergebnis:</p>
-                                        <h3>Negativ</h3>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="tp_lable">
-                                        <p>Testkit-ID:</p>
-                                        <h3>348912DE22</h3>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="modal_common_btn testergebis_btn">
-                            <div class="m_btn">
-                                <button class="common_btn" data-bs-toggle="modal" data-bs-target="#test_auswerten_bestatigung_1">Erneut versenden</button>
-                                <button class="common_btn cm_black_btn">Ergebnis drucken</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-          <!-- Test auswerten Bestätigung – 1 Modal -->
-          <div class="modal fade common_modal cm_small_common" id="test_auswerten_bestatigung_1" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Das Testergebnis wurde erneut verschickt!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Das Testergebnis wurde erneut per E-Mail an die Testperson verschickt. Eventuell muss hier auch der SPAM-Ordner gecheckt werden. Um das Ergebnis zu sehen brauch die Testperson die PIN.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </div>
-
-         <!-- Checkin Bestätigung Modal -->
-         <div class="modal fade common_modal cm_small_common" id="checkin_bestatigung" tabindex="-1"  aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content terimin_content">
-                    <div class="modal-body">
-                        <div class="common_success_content">
-                            <div class="cm_success_ic">
-                                <img src="assets/images/modal_check_ic.svg" alt="check">
-                            </div>
-                            <div class="cm_success_title">
-                                <h3>Person wurde eingecheckt!</h3>
-                            </div>
-                            <div class="cm_success_desc">
-                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest durchgeführt werden.</p>
-                            </div>
-                            <div class="cm_success_btn">
-                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-          
-        <script src="assets/js/jquery3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script> 
-        <script src= "assets/js/jquery.datetimepicker.full.min.js"> </script>
-        <script src= "assets/js/wow.js"> </script>
-        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-        
-        <script>
-            $(document).ready(function(){
-                //Popover Js
-                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-                return new bootstrap.Popover(popoverTriggerEl)
-                })
-
-                //Datepicker Js
-                jQuery.datetimepicker.setLocale('de');
-
-                jQuery('.startDate').datetimepicker({
-                    i18n:{
-                        de:{
-                            months:[
-                                'Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember',
-                            ]
-                        }
-                    },
-                    dayOfWeekStart: 1,
-                    timepicker:false,
-                    format:'d.m.Y'
-                });            
-
-
-                jQuery('.startTime').datetimepicker({
-                    datepicker:false,
-                    format:'h:m a',
-                    step : 1
-
-                });
-            });
-            
-            
-            // Countdown Js
-            function countdown( elementName, minutes, seconds )
-            {
-                var element, endTime, hours, mins, msLeft, time;
-                
-                function twoDigits( n )
-                {
-                    return (n <= 9 ? "0" + n : n);
-                }
-                
-                function updateTimer()
-                {
-                    msLeft = endTime - (+new Date);
-                    if ( msLeft < 1000 ) {
-                        element.innerHTML = "Time is up!";
-                    } else {
-                        time = new Date( msLeft );
-                        hours = time.getUTCHours();
-                        mins = time.getUTCMinutes();
-                        element.innerHTML =  twoDigits( hours ) + ':' + twoDigits( mins ) + ':' + twoDigits( time.getUTCSeconds() );
-                        setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
-                    }
-                }
-                
-                element = document.getElementById( elementName );
-                endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
-                updateTimer();
-            }
-            
-            countdown( "ten-countdown", 15, 59 );
-            countdown( "ten-countdown-1", 15, 59 );
-            
-        </script>
-        <script>
-            $(document).ready( function () {
-                var table = $('#testool_tables').DataTable( {
-                    paging: true,
-                    "ordering": false,
-                    "pagingType": "full_numbers",
-                    "lengthChange": true,
-                    "lengthMenu": [[13, 25, 50, -1], [16, 25, 50, "All"]],
-                    "language" : {
-                        searchPlaceholder: "Nach Namen suchen…",
-                        "decimal":        "",
-                        "emptyTable":     "Keine Daten in der Tabelle verfügbar",
-                        "info":           "Angezeigt _START_ - _END_ von _TOTAL_ Datensätzen",
-                        "infoEmpty":      "Showing 0 to 0 of 0 entries",
-                        "infoFiltered":   "(filtered from _MAX_ total entries)",
-                        "infoPostFix":    "",
-                        "thousands":      ",",
-                        "lengthMenu":     "_MENU_",
-                        "loadingRecords": "Loading...",
-                        "processing":     "Processing...",
-                        "search":         "Search:",
-                        "zeroRecords":    "Keine übereinstimmenden Aufzeichnungen gefunden",
-                        "paginate": {
-                            "first":      '<svg xmlns="http://www.w3.org/2000/svg" width="10.706" height="12.912" viewBox="0 0 10.706 12.912"> <g id="Page_1" data-name="Page 1" transform="translate(0.25 0.456)"> <path id="Stroke_1" data-name="Stroke 1" d="M6.5,0,0,5.75,6.5,11.5" transform="translate(0.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> <path id="Stroke_3" data-name="Stroke 3" d="M6.5,0,0,5.75,6.5,11.5" transform="translate(3.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> </g></svg>',
-                            "last":       '<svg xmlns="http://www.w3.org/2000/svg" width="10.706" height="12.912" viewBox="0 0 10.706 12.912"> <g id="Page_1" data-name="Page 1" transform="translate(0.456 0.456)"> <path id="Stroke_1" data-name="Stroke 1" d="M0,0,6.5,5.75,0,11.5" transform="translate(3.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> <path id="Stroke_3" data-name="Stroke 3" d="M0,0,6.5,5.75,0,11.5" transform="translate(0.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> </g></svg>',
-                            "next":       '<svg xmlns="http://www.w3.org/2000/svg" width="7.706" height="12.912" viewBox="0 0 7.706 12.912"> <path id="Page_1" data-name="Page 1" d="M0,.5,6.5,6.25,0,12" transform="translate(0.706 0.206)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/></svg>',
-                            "previous":   '<svg xmlns="http://www.w3.org/2000/svg" width="7.706" height="12.912" viewBox="0 0 7.706 12.912"> <path id="Page_1" data-name="Page 1" d="M6.5.5,0,6.25,6.5,12" transform="translate(0.5 0.206)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/></svg>'
-                        },
-                        "aria": {
-                            "sortAscending":  ": activate to sort column ascending",
-                            "sortDescending": ": activate to sort column descending"
-                        }
-                    }
-                } );
-            } );
-        </script>
-       
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Page</title>
+    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/jquery.datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <!-- Header Start -->
+        <div class="header_wrapper">
+            <header>
+                <div class="header_block">
+                    <div class="logo_trigger_hold">
+                        <div class="logo">
+                            <a href="index.html"><span>CAS</span>TOOLA</a>
+                        </div>
+                        <div class="menu_trigger">
+                            <a href="#0"><img src="assets/images/toggle_ic.svg" alt="trigger"></a>
+                        </div>
+                    </div>
+                    <div class="header_left_content">
+                        <div class="header_common_btn">
+                            <a href="#0" class="common_btn" data-bs-toggle="modal"
+                                data-bs-target="#termin_buchen">Termin buchen</a>
+                        </div>
+                        <div class="logout_icon">
+                            <a href="#0"><img src="assets/images/logout_ic.svg" alt="logout"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Header End -->
+        <!-- Sidebar Start -->
+        <div class="sidebar_wrapper">
+            <div class="sidebar_block">
+                <div class="sidebar_menu_block">
+                    <div class="mobile_menu_header">
+                        <div class="logo">
+                            <div class="logo">
+                                <a href="#0"><span>CAS</span>TOOLA</a>
+                            </div>
+                        </div>
+                        <div class="close_trigger">
+                            <a href="#0"><img src="assets/images/close_menu_ic.svg" alt="trigger"></a>
+                        </div>
+                    </div>
+                    <div class="sidebar_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Dashboard">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu1.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Dashboard</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="termine.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Termine">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu2.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Termine</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Labor.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Labor">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu3.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Labor</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_menu_title">
+                        <h3>EINSTELLUNGEN</h3>
+                    </div>
+                    <div class="sidebar_menu_sec">
+                        <ul>
+                            <li class="">
+                                <a href="mein_unternehmen.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Mein Unternehmen">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu4.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Mein Unternehmen</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mitarbeiter.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Mitarbeiter">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu7.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Mitarbeiter</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="standortverwaltung.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Standortverwaltung">
+                                    <div class="menu_icon">
+                                        <img src="assets/images/sidebar_menu6.svg" alt="icon">
+                                    </div>
+                                    <div class="menu_text">Standortverwaltung</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cm-overlay"></div>
+        <!-- Sidebar End -->
+        <!-- Main Content Start -->
+        <div class="main_content">
+            <div class="main_content_lg">
+                <div class="db_common_heading_box">
+                    <h2 class="wow fadeInUp">Dashboard</h2>
+                </div>
+                <div class="common_content_pad_block">
+                    <div class="db_content_box_block">
+                        <div class="row">
+                            <div class="cm_col_20">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="1s">
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic1.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Anmeldung</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>48</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>gebuchte Termine</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cm_col_20">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.2s">
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic2.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Durchgeführte Tests</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>29</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>Insgesamt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cm_col_20">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.4s">
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic3.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Negativ</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>79</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>negative Tests</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cm_col_20">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.6s">
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic3.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Nicht eindeutig</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>68</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>nicht eindeutige Tests</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cm_col_20">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="1.8s">
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic3.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Positiv</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>68</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>positive Tests</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cm_col_40">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="2s">
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic4.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Aktuell eingecheckte Personen</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>48</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>Personen die aktuell auf den Test warten</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cm_col_40">
+                                <div class="db_display_box wow fadeInUp" data-wow-duration="2.2s">
+                                    <div class="notify_block">
+                                        <div class="notify_ic">
+                                            <a href="javascript:void(0)" data-bs-toggle="popover"
+                                                data-bs-trigger="focus" data-bs-placement="bottom"
+                                                data-bs-content="Dies ist ein Hilfetext. Diese Box passt sich je nach Inhalt selbstständig an und wird somit größer oder auch kleiner. Die Breite"><img
+                                                    src="assets/images/bell_ic.svg" alt="bell"></a>
+                                        </div>
+                                    </div>
+                                    <div class="db_dispaly_icon">
+                                        <img src="assets/images/db_ic5.svg" alt="icon">
+                                    </div>
+                                    <div class="db_display_title">
+                                        <h3>Aktuell laufende Schnelltests</h3>
+                                    </div>
+                                    <div class="db_display_number">
+                                        <h4>48</h4>
+                                    </div>
+                                    <div class="db_display_desc">
+                                        <p>Schnelltests die die aktuell durchgeführt werden</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="komplette_table_wrapper">
+                        <div class="komplette_table_block">
+                            <div class="common_table_wrap ">
+                                <table id="testool_tables" data-page-length='13' class="common_table_inner">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox1">
+                                                        <label for="checkbox1" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>Termin</p>
+                                            </td>
+                                            <td>
+                                                <p>Vorname</p>
+                                            </td>
+                                            <td>
+                                                <p>Nachname</p>
+                                            </td>
+                                            <td>
+                                                <p>Geburtsdatum</p>
+                                            </td>
+                                            <td>
+                                                <p>Testergebnis</p>
+                                            </td>
+                                            <td>
+                                                <p>Status</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox2">
+                                                        <label for="checkbox2" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>26.10.2021 11:15</p>
+                                            </td>
+                                            <td>
+                                                <p>Sandro</p>
+                                            </td>
+                                            <td>
+                                                <p>Mühlbauer</p>
+                                            </td>
+                                            <td>
+                                                <p>15.10.1989</p>
+                                            </td>
+                                            <td>
+                                                <p></p>
+                                            </td>
+                                            <td>
+                                                <a href="#0" class="common_table_btn" data-bs-toggle="modal"
+                                                    data-bs-target="#checkin_modal">Check-In</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox3">
+                                                        <label for="checkbox3" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>26.10.2021 11:20</p>
+                                            </td>
+                                            <td>
+                                                <p>Sandro</p>
+                                            </td>
+                                            <td>
+                                                <p>Mühlbauer</p>
+                                            </td>
+                                            <td>
+                                                <p>15.10.1989</p>
+                                            </td>
+                                            <td>
+                                                <p></p>
+                                            </td>
+                                            <td>
+                                                <a href="#0" class="common_table_btn test_btn" data-bs-toggle="modal"
+                                                    data-bs-target="#test_starten_bestatigung">Test starten</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox4">
+                                                        <label for="checkbox4" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>26.10.2021 11:15</p>
+                                            </td>
+                                            <td>
+                                                <p>Sandro</p>
+                                            </td>
+                                            <td>
+                                                <p>Mühlbauer</p>
+                                            </td>
+                                            <td>
+                                                <p>15.10.1989</p>
+                                            </td>
+                                            <td>
+                                                <p class="db_t_label">Test läuft aktuell</p>
+                                            </td>
+                                            <td>
+                                                <a href="#0" class="common_table_btn countdown_btn" id="ten-countdown-1"
+                                                    data-bs-toggle="modal" data-bs-target="#test_auswerten">00:15:50</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox5">
+                                                        <label for="checkbox5" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>26.10.2021 11:15</p>
+                                            </td>
+                                            <td>
+                                                <p>Sandro</p>
+                                            </td>
+                                            <td>
+                                                <p>Mühlbauer</p>
+                                            </td>
+                                            <td>
+                                                <p>15.10.1989</p>
+                                            </td>
+                                            <td>
+                                                <p class="t_green_lable">Negativ</p>
+                                            </td>
+                                            <td>
+                                                <a href="#0" class="common_table_btn labor_btn" data-bs-toggle="modal"
+                                                    data-bs-target="#testergebnis_pin">Abgeschlossen</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox6">
+                                                        <label for="checkbox6" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>26.10.2021 11:15</p>
+                                            </td>
+                                            <td>
+                                                <p>Sandro</p>
+                                            </td>
+                                            <td>
+                                                <p>Mühlbauer</p>
+                                            </td>
+                                            <td>
+                                                <p>15.10.1989</p>
+                                            </td>
+                                            <td>
+                                                <p class="db_t_label">Nicht eindeutig</p>
+                                            </td>
+                                            <td>
+                                                <a href="#0" class="common_table_btn labor_btn" data-bs-toggle="modal"
+                                                    data-bs-target="#testergebnis_pin">Abgeschlossen</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table_group">
+                                                    <div class="round">
+                                                        <input type="checkbox" id="checkbox7">
+                                                        <label for="checkbox7" class="radio-label"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>26.10.2021 11:15</p>
+                                            </td>
+                                            <td>
+                                                <p>Sandro</p>
+                                            </td>
+                                            <td>
+                                                <p>Mühlbauer</p>
+                                            </td>
+                                            <td>
+                                                <p>15.10.1989</p>
+                                            </td>
+                                            <td>
+                                                <p class="t_red_label">Positiv</p>
+                                            </td>
+                                            <td>
+                                                <a href="#0" class="common_table_btn labor_btn" data-bs-toggle="modal"
+                                                    data-bs-target="#testergebnis_pin">Abgeschlossen</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content End -->
+        <!-- Modal -->
+        <!-- Termin buchen Modal -->
+        <div class="modal fade common_modal" id="termin_buchen" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Manuellen Termin buchen</h3>
+                            <p>Buchen Sie hier einen manuellen Termin und geben die Daten ein.</p>
+                        </div>
+                        <div class="tb_content_block">
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Vorname">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_full">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Straße + Hausnummer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Postleitzahl">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ort">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="eamil" placeholder="E-Mail">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Telefon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input date_picker">
+                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
+                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ausweisnummer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_common_btn hea_modal_btn">
+                                <button class="common_btn" data-bs-toggle="modal"
+                                    data-bs-target="#termin_buchen_estatigung">Einchecken</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Termin buchen Bestätigung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="termin_buchen_estatigung" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Person wurde eingecheckt!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest
+                                    durchgeführt werden.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Checkin Modal -->
+        <div class="modal fade common_modal" id="checkin_modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Person einchecken</h3>
+                            <p>Hier bitte nochmals alle Daten überprüfen.</p>
+                        </div>
+                        <div class="tb_content_block">
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Vorname">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Nachname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_full">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Straße & Hausnummer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Postleitzahl">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ort">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="eamil" placeholder="E-Mail">
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Telefon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_common_row">
+                                <div class="m_col_half">
+                                    <div class="common_input date_picker">
+                                        <input type="text" class="startDate" placeholder="Geburtsdatum">
+                                        <span class="date_icon"><img src="assets/images/date_ic.svg" alt="date"></span>
+                                    </div>
+                                </div>
+                                <div class="m_col_half">
+                                    <div class="common_input">
+                                        <input type="text" placeholder="Ausweisnummer eingeben">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_common_btn checkin_btn">
+                                <div class="m_btn">
+                                    <button class="common_btn" data-bs-toggle="modal"
+                                        data-bs-target="#checkin_bestatigung">Einchecken</button>
+                                    <button class="common_btn common_black_btn_border">Etikett drucken</button>
+                                </div>
+                                <div class="m_btn">
+                                    <button class="common_btn common_red_btn_border" data-bs-toggle="modal"
+                                        data-bs-target="#checkin_bd_stornierung">Termin stornieren</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Checkin Bestätigung der Stornierung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="checkin_bd_stornierung" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Der Termin wurde erfolgreich storniert!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Der gewünschte Termin wurde erfolgreich storniert. <br>Dieser Vorgang kann nicht
+                                    Rückgängig gemacht werden.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Test starten Bestätigung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="test_starten_bestatigung" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Der Test wurde gestartet!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Der Test wurde nun gestartet. Sieh auf die Uhr um festzustellen ob die Auswertung
+                                    bereits erfolgen kann.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Test auswerten -->
+        <div class="modal fade common_modal" id="test_auswerten" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Testergebnis auswerten</h3>
+                            <p>Bitte hinterlege durch das drücken des Buttons das Testergebnis</p>
+                        </div>
+                        <div class="tb_content_block ">
+                            <div class="mc_test_auswertn_block">
+                                <div class="ts_col_mleft">
+                                    <div class="mts_content_box">
+                                        <h3>Max Mustermann</h3>
+                                        <p>01.01.1990</p>
+                                        <p>Musterstraße 1</p>
+                                        <p>12345 Musterstadt</p>
+                                        <p>0170 / 12 34 56 78</p>
+                                        <p>maxmustermann@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="ts_col_mright">
+                                    <div class="m_common_row">
+                                        <div class="m_col_half">
+                                            <div class="m_sub_inner_title">
+                                                <h3>Wie lange läuft der Test bereits?</h3>
+                                            </div>
+                                            <div class="common_input ">
+                                                <div id="ten-countdown" class="cm_countdown"></div>
+                                            </div>
+                                        </div>
+                                        <div class="m_col_half">
+                                            <div class="m_sub_inner_title">
+                                                <h3>Testkit-ID hinterlegen:</h3>
+                                            </div>
+                                            <div class="common_input">
+                                                <div class="common_input ">
+                                                    <input type="text" placeholder="ID eingeben">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_common_btn test_aus_btn">
+                                <div class="m_sub_inner_title">
+                                    <h3>Wie ist das Ergebnis ausgefallen?</h3>
+                                </div>
+                                <div class="m_btn">
+                                    <button class="common_btn cm_green_btn" data-bs-toggle="modal"
+                                        data-bs-target="#ist_dieses_testergebnis">Negativ</button>
+                                    <button class="common_btn cm_black_btn" data-bs-toggle="modal"
+                                        data-bs-target="#ist_dieses_testergebnis">Nicht eindeutig</button>
+                                    <button class="common_btn cm_red_btn" data-bs-toggle="modal"
+                                        data-bs-target="#ist_dieses_testergebnis">Positiv</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ist dieses Testergebnis -->
+        <div class="modal fade common_modal cm_small_common" id="ist_dieses_testergebnis" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_question_content">
+                            <div class="cm_question_title">
+                                <h3>Ist dieses Testergebnis wirklich richtig?</h3>
+                            </div>
+                            <div class="cm_question_btn">
+                                <button class="common_btn cm_green_btn" data-bs-toggle="modal"
+                                    data-bs-target="#test_auswerten_bestatigung">Ja</button>
+                                <button class="common_btn cm_red_btn" data-bs-toggle="modal"
+                                    data-bs-target="#test_auswerten">Nein</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Test auswerten Bestätigung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="test_auswerten_bestatigung" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Das Testergebnis wurde gespeichert!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Das Testergebnis wurde gespeichert und automatisch per E-Mail an die Testperson
+                                    übermittelt. Das Passwort zum öffnen findest du in den Kundendaten.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testergebnis + PIN Modal -->
+        <div class="modal fade common_modal" id="testergebnis_pin" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        <div class="tb_heading_modal">
+                            <h3>Testergebis & PIN</h3>
+                            <p>Hier kannst du das Ergebnis erneut verschicken und die PIN einsehen</p>
+                        </div>
+                        <div class="testergebis_pin_content">
+                            <ul>
+                                <li>
+                                    <div class="tp_lable">
+                                        <p>Testergebnis:</p>
+                                        <h3>Negativ</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tp_lable">
+                                        <p>Testkit-ID:</p>
+                                        <h3>348912DE22</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal_common_btn testergebis_btn">
+                            <div class="m_btn">
+                                <button class="common_btn" data-bs-toggle="modal"
+                                    data-bs-target="#test_auswerten_bestatigung_1">Erneut versenden</button>
+                                <button class="common_btn cm_black_btn">Ergebnis drucken</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Test auswerten Bestätigung – 1 Modal -->
+        <div class="modal fade common_modal cm_small_common" id="test_auswerten_bestatigung_1" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Das Testergebnis wurde erneut verschickt!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Das Testergebnis wurde erneut per E-Mail an die Testperson verschickt. Eventuell muss
+                                    hier auch der SPAM-Ordner gecheckt werden. Um das Ergebnis zu sehen brauch die
+                                    Testperson die PIN.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Checkin Bestätigung Modal -->
+        <div class="modal fade common_modal cm_small_common" id="checkin_bestatigung" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content terimin_content">
+                    <div class="modal-body">
+                        <div class="common_success_content">
+                            <div class="cm_success_ic">
+                                <img src="assets/images/modal_check_ic.svg" alt="check">
+                            </div>
+                            <div class="cm_success_title">
+                                <h3>Person wurde eingecheckt!</h3>
+                            </div>
+                            <div class="cm_success_desc">
+                                <p>Die gewählte Person wurde eingecheckt. <br>Als nächstes muss der Schnelltest
+                                    durchgeführt werden.</p>
+                            </div>
+                            <div class="cm_success_btn">
+                                <button data-bs-dismiss="modal" class="common_btn cm_green_btn">Weiter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.datetimepicker.full.min.js"> </script>
+    <script src="assets/js/wow.js"> </script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Popover Js
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+            //Datepicker Js
+            jQuery.datetimepicker.setLocale('de');
+            jQuery('.startDate').datetimepicker({
+                i18n: {
+                    de: {
+                        months: [
+                            'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember',
+                        ]
+                    }
+                },
+                dayOfWeekStart: 1,
+                timepicker: false,
+                format: 'd.m.Y'
+            });
+            jQuery('.startTime').datetimepicker({
+                datepicker: false,
+                format: 'h:m a',
+                step: 1
+            });
+        });
+        // Countdown Js
+        function countdown(elementName, minutes, seconds) {
+            var element, endTime, hours, mins, msLeft, time;
+            function twoDigits(n) {
+                return (n <= 9 ? "0" + n : n);
+            }
+            function updateTimer() {
+                msLeft = endTime - (+new Date);
+                if (msLeft < 1000) {
+                    element.innerHTML = "Time is up!";
+                } else {
+                    time = new Date(msLeft);
+                    hours = time.getUTCHours();
+                    mins = time.getUTCMinutes();
+                    element.innerHTML = twoDigits(hours) + ':' + twoDigits(mins) + ':' + twoDigits(time.getUTCSeconds());
+                    setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+                }
+            }
+            element = document.getElementById(elementName);
+            endTime = (+new Date) + 1000 * (60 * minutes + seconds) + 500;
+            updateTimer();
+        }
+        countdown("ten-countdown", 15, 59);
+        countdown("ten-countdown-1", 15, 59);
+    </script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#testool_tables').DataTable({
+                paging: true,
+                "ordering": false,
+                "pagingType": "full_numbers",
+                "lengthChange": true,
+                "lengthMenu": [[13, 25, 50, -1], [16, 25, 50, "All"]],
+                "language": {
+                    searchPlaceholder: "Nach Namen suchen…",
+                    "decimal": "",
+                    "emptyTable": "Keine Daten in der Tabelle verfügbar",
+                    "info": "Angezeigt _START_ - _END_ von _TOTAL_ Datensätzen",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "_MENU_",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "Keine übereinstimmenden Aufzeichnungen gefunden",
+                    "paginate": {
+                        "first": '<svg xmlns="http://www.w3.org/2000/svg" width="10.706" height="12.912" viewBox="0 0 10.706 12.912"> <g id="Page_1" data-name="Page 1" transform="translate(0.25 0.456)"> <path id="Stroke_1" data-name="Stroke 1" d="M6.5,0,0,5.75,6.5,11.5" transform="translate(0.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> <path id="Stroke_3" data-name="Stroke 3" d="M6.5,0,0,5.75,6.5,11.5" transform="translate(3.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> </g></svg>',
+                        "last": '<svg xmlns="http://www.w3.org/2000/svg" width="10.706" height="12.912" viewBox="0 0 10.706 12.912"> <g id="Page_1" data-name="Page 1" transform="translate(0.456 0.456)"> <path id="Stroke_1" data-name="Stroke 1" d="M0,0,6.5,5.75,0,11.5" transform="translate(3.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> <path id="Stroke_3" data-name="Stroke 3" d="M0,0,6.5,5.75,0,11.5" transform="translate(0.25 0.25)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/> </g></svg>',
+                        "next": '<svg xmlns="http://www.w3.org/2000/svg" width="7.706" height="12.912" viewBox="0 0 7.706 12.912"> <path id="Page_1" data-name="Page 1" d="M0,.5,6.5,6.25,0,12" transform="translate(0.706 0.206)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/></svg>',
+                        "previous": '<svg xmlns="http://www.w3.org/2000/svg" width="7.706" height="12.912" viewBox="0 0 7.706 12.912"> <path id="Page_1" data-name="Page 1" d="M6.5.5,0,6.25,6.5,12" transform="translate(0.5 0.206)" fill="none" stroke="#3b4859" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/></svg>'
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

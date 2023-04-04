@@ -1,96 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sign In</title>
-
-    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
-
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    
-    
-    <!-- Style Sheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-  
-
-</head>
-<body>
-    <div class="main_wrapper">
-        <div class="signup_signin_wrapper sign_page">
-            <div class="common_info_wrap">
-                <div class="common_details_wrap">
-                    <div class="logo">
-                        <a href="index.html"><span>TES</span>TOOLA</a>
-                    </div>
-                    <div class="common_info_wrap_inner">
-                        <h2 class="cm_title">Willkommen zurück!</h2>
-                        <p class="cm_dec">Bitte melden Sie sich mit Ihren Daten an.</p>
-                        <form onsubmit=formverify(event)>
-                            <div class="common_input common_margin">
-                                <input type="text" placeholder="E-Mail">
-                                <p class="warning_text">*&nbsp; Pflichtfeld muss ausgefüllt werden</p>
-                            </div>
-                            <div class="common_input common_margin passwort_wrap">
-                                <div class="position-relative">
-                                    <input type="password" placeholder="Passwort">
-                                    <a href="#0" class="passwort_show_hide">
-                                        <img src="assets/images/common_img/eye_icon.svg" alt="eye icon">
-                                    </a>
-                                </div>
-                                <p class="warning_text">*&nbsp; Pflichtfeld muss ausgefüllt werden</p>
-                            </div>
-                            <div class="common_margin">
-                                <button type="submit" class="common_btn">Anmelden</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="common_down">
-                    <p><a href="forgot_password.html">Passwort vergessen?</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="logo">
-        <a href="#0"><span>TES</span>TOOLA</a>
-    </div> -->
-
-
-    <script src="assets/js/jquery3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script> 
-    <script src="assets/js/wow.js" ></script> 
-    <script src="assets/js/custom.js"></script>
-
-    <script>
-        function formverify(event){
-            event.preventDefault();
-            $('form .common_input').each(function(){
-                if($(this).find('input').val().length === 0){
-                    $(this).find('.warning_text').show()
-                }
-                else{
-                    $(this).find('.warning_text').hide()
-                }
-            })
-        }
-    </script>
-
-</body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+    <link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.png" />
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="signup_signin_wrapper sign_page">
+            <div class="common_info_wrap">
+                <div class="common_details_wrap">
+                    <div class="logo">
+                        <a href="index.html"><span>CAS</span>TOOLA</a>
+                    </div>
+                    <div class="common_info_wrap_inner">
+                        <h2 class="cm_title">Willkommen zurück!</h2>
+                        <p class="cm_dec">Bitte melden Sie sich mit Ihren Daten an.</p>
+                        <form onsubmit=formverify(event)>
+                            <div class="common_input common_margin">
+                                <input type="text" placeholder="E-Mail">
+                                <p class="warning_text">*&nbsp; Pflichtfeld muss ausgefüllt werden</p>
+                            </div>
+                            <div class="common_input common_margin passwort_wrap">
+                                <div class="position-relative">
+                                    <input type="password" placeholder="Passwort">
+                                    <a href="#0" class="passwort_show_hide">
+                                        <img src="assets/images/common_img/eye_icon.svg" alt="eye icon">
+                                    </a>
+                                </div>
+                                <p class="warning_text">*&nbsp; Pflichtfeld muss ausgefüllt werden</p>
+                            </div>
+                            <div class="common_margin">
+                                <button type="submit" class="common_btn">Anmelden</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="common_down">
+                    <p><a href="forgot_password.html">Passwort vergessen?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script> 
+    <script src="assets/js/wow.js" ></script> 
+    <script src="assets/js/custom.js"></script>
+    <script>
+        function formverify(event){
+            event.preventDefault();
+            $('form .common_input').each(function(){
+                if($(this).find('input').val().length === 0){
+                    $(this).find('.warning_text').show()
+                }
+                else{
+                    $(this).find('.warning_text').hide()
+                }
+            })
+        }
+    </script>
+</body>
 </html>
